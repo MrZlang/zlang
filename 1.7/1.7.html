@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jquery仿迅雷官方网站全屏响应式轮播图动画特效</title>
+	<link rel="stylesheet" href="css/nheader.css">
+	<link rel="stylesheet" href="css/nstyle.css">
+</head>
+<body>
+
+<div class="header">
+  <h1 class="logo png"><a href="http://www.xunlei.com/" title="迅雷网络"><img src="img/n_logo.png" class="png" alt="迅雷网络"></a></h1>
+  <ul class="nav_list">
+    <li class="nav_li">
+      <a href="http://dl.xunlei.com/?from=index" class="btn_nav" clickid="gwcpzx"><i class="ic_product png" target="_blank"></i>产品</a>
+    </li>
+    <li class="nav_li">
+        <a href="http://www.xunlei.com/newscenter.html" class="btn_nav" clickid="gwxwzx"><i class="ic_new png"></i>新闻</a>
+      </li>
+    <li class="nav_li">
+      <a href="javascript:;" class="btn_nav" id="nav_more"><i class="ic_more png"></i>更多</a>
+      <div class="more_nav" id="more_nav">
+        <!--[if lt IE 9]>
+        <span class="opc_bg"></span>
+        <![endif]-->
+        <i class="ic_bdot png" id="h_bdot"></i>
+        <ul id="h_nav">
+          <li>
+            <a href="http://www.xycdn.com/" clickid="gwgd1" target="_blank" class="btn_snav">星域CDN</a>
+          </li>
+          <!-- <li>
+            <a href="http://red.xunlei.com/" target="_blank" class="btn_snav">赚钱宝</a>
+          </li> -->
+         <!--  <li>
+            <a href="http://www.xunlei.com/news.html" target="_blank" class="btn_snav">新闻动态</a>
+          </li> -->
+          <li>
+            <a href="http://hr.xunlei.com/"  clickid="gwgd3" class="btn_snav" target="_blank">人力资源</a>
+          </li>
+          <li>
+            <a href="http://ir.xunlei.com/"  clickid="gwgd4" target="_blank" class="btn_snav">投资关系</a>
+          </li>
+          <li>
+            <a href="http://www.xunlei.com/introduction.html"  clickid="gwgd5" target="_blank" class="btn_snav">关于迅雷</a>
+          </li>
+          <li>
+            <a href="http://www.xunlei.com/connection.html"  clickid="gwgd6" target="_blank" class="btn_snav">联系我们</a>
+          </li>
+
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="wrap" id="wrap">
+	<div class="wrapper">
+    <div class="product_list" id="product_list">
+      <!-- 迅雷
+      <div class="product_box xnet9 show">
+        <div class="bg_box">
+          <img src="img/bg_xnet9.jpg">
+        </div>
+          
+        <canvas id="canvas"></canvas>
+        <div class="content">
+          <span class="page_bg"></span>
+          <div class="main_box">
+            <h2 class="hide_txt png">
+              精彩，一下就有
+            </h2>
+            <a  clickid="gwlb1-1" href="http://xl9.xunlei.com/" target="_blank" class="btn_product" title="迅雷">迅雷</a>
+          </div>
+        </div>
+      </div>-->
+       <!-- 迅雷 -->
+      <div class="product_box xnet show">
+        <div class="bg_box">
+          <img src="img/bg_xnet.jpg">
+          <canvas id="fireworks" width="1296" height="729" style="margin-top: -364.5px; margin-left: -648px;"></canvas>
+        </div>
+        <div class="content">
+          <div class="main_box">
+            <h2 class="hide_txt png">
+              精彩，一下就有
+            </h2>
+            <a clickid="gwlb1-1" href="http://xl9.xunlei.com/" target="_blank" class="btn_product btn_left" title="PC迅雷">PC迅雷</a>
+            <a clickid="gwlb2-1" href="http://mobile.xunlei.com/"   target="_blank" class="btn_product btn_right" title="移动迅雷">移动迅雷</a>
+          </div>
+        </div>
+      </div>
+      <!-- 手雷
+      <div class="product_box shoulei">
+        <div class="bg_box">
+          <img src="img/bg_shoulei.jpg">
+        </div>
+        <div class="content">
+          <div class="main_box">
+            <h2 class="hide_txt  png">
+              <span class="txt_1 png">炽</span>
+              <span class="txt_2 png">热</span>
+              <span class="txt_3 png">追</span>
+              <span class="txt_4 png">片</span>
+              <span class="txt_5 png">之</span>
+              <span class="txt_6 png">心</span>
+              <span class="txt_7 png">没</span>
+              <span class="txt_8 png">有</span>
+              <span class="txt_9 png">wifi</span>
+              <span class="txt_10 png">也</span>
+              <span class="txt_11 png">挡</span>
+              <span class="txt_12 png">不</span>
+              <span class="txt_13 png">住</span>
+            </h2>
+            <a clickid="gwlb2-1" href="http://mobile.xunlei.com/" target="_blank"  class="btn_product" title="手机迅雷">手机迅雷</a>
+          </div>
+        </div>
+      </div>-->
+     <!--  <div class="product_box xnet">
+         <div class="bg_box">
+          <img src="img/bg_xnet.jpg">
+        </div>
+        <div class="content">
+          <div class="main_box">
+            <h2 class="hide_txt  png">
+              <span class="txt_1 png">极</span>
+              <span class="txt_2 png">速</span>
+              <span class="txt_3 png">不</span>
+              <span class="txt_4 png">止</span>
+              <span class="txt_5 png">一</span>
+              <span class="txt_6 png">次</span>
+              <span class="txt_7 png">的</span>
+              <span class="txt_8 png">挑</span>
+              <span class="txt_9 png">战</span>
+            </h2>
+            <a clickid="gwlb3-1" href="http://dl.xunlei.com/xl7.9/intro.html" target="_blank" class="btn_product" title="迅雷7.9">迅雷7.9</a>
+          </div>
+        </div>
+      </div> -->
+      <div class="product_box member">
+        <div class="bg_box">
+          <img src="img/bg_member.jpg">
+        </div>
+        <div class="content">
+          <div class="main_box">
+            <h2 class="hide_txt  png">
+             只为打造品质生活
+            <!--
+              <span class="txt_1 png">快</span>
+              <span class="txt_2 png">让</span>
+              <span class="txt_3 png">生</span>
+              <span class="txt_4 png">活</span>
+              <span class="txt_5 png">慢</span>
+              <span class="txt_6 png">下</span>
+              <span class="txt_7 png">来</span>-->
+            </h2>
+            <a clickid="gwlb4-1" href="http://vip.xunlei.com/" target="_blank" class="btn_product" title="迅雷会员">迅雷会员</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product_box xav">
+        <div class="bg_box">
+          <img src="img/bg_xav.jpg">
+        </div>
+        <div class="content">
+          <div class="main_box">
+            <h2 class="hide_txt png">
+            震撼视界，为你而FUN
+            <!--
+              <span class="txt_1 png">流</span>
+              <span class="txt_2 png">畅</span>
+              <span class="txt_3 png">画</span>
+              <span class="txt_4 png">质</span>
+              <span class="txt_5 png">乐</span>
+              <span class="txt_6 png">无</span>
+              <span class="txt_7 png">止</span>
+              <span class="txt_8 png">境</span>-->
+            </h2>
+            <a clickid="gwlb5-1" href="http://video.xunlei.com/pc.html" target="_blank" class="btn_product" title="迅雷影音">迅雷影音</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--底部浮出来 -->
+    <div class="product_btns" id="product_btns">
+      <div class="content">
+        <div class="btns_area">
+          <div class="btns_box" id="control_box">
+            <a clickid="gwlb1-2"  class="btn_xnet9 cur cur" title="点击下载"><span class="ic_xnet9 hide_txt png">点击下载</span></a>
+            <!--
+            <a clickid="gwlb2-2" href="http://mobile.xunlei.com/" target="_blank" class="btn_ipr btn_shoulei" title="手机迅雷" ><span class="ic_shoulei hide_txt png">手机迅雷</span></a>-->
+          <!--   <a clickid="gwlb3-2" href="http://dl.xunlei.com/xl7.9/intro.html" target="_blank" class="btn_xnet" title="迅雷7.9"><span class="ic_xnet hide_txt png">迅雷7.9</span></a> -->
+            <a clickid="gwlb4-2" href="http://vip.xunlei.com/" target="_blank" class="btn_member" title="进入官网"><span class="ic_member hide_txt png">进入官网</span></a>
+             <!-- <a href="http://k.xunlei.com/" target="_blank" class="btn_xkn" title="迅雷快鸟"><span class="ic_xkn hide_txt png">迅雷快鸟</span></a> -->
+            <a clickid="gwlb5-2"  class="btn_xav" title="点击下载"><span class="ic_xav hide_txt png">点击下载</span></a>
+            <span class="ic_line" id="ic_line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
