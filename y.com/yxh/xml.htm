@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="GB2312"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">  
+<url>
+ <loc>http://www.yixiaohang.com/</loc>  
+  <lastmod>
+  {dede:arclist row='1' titlelen='24' orderby='pubdate'}
+  [field:pubdate function=strftime('%Y-%m-%d',@me)/]
+  {/dede:arclist}
+  </lastmod>
+  <changefreq>always</changefreq>  
+  <priority>1.0</priority>
+</url>
+
+{dede:channel row='50' type='top'} 
+<url>
+<loc>[field:typelink /]</loc>  
+  <changefreq>daily</changefreq>
+  <priority>0.9</priority>
+</url> 
+{/dede:channel}   
+
+{dede:arclist row='10000' orderby='pubdate'}
+<url>   
+<loc>[field:arcurl /]</loc>
+<lastmod>[field:pubdate function=strftime('%Y-%m-%d',@me)/]</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority> 
+</url>
+{/dede:arclist}
+</urlset>

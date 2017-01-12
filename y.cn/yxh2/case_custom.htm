@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link  href="{dede:global.cfg_templets_skin/}/style/layout.css" rel="stylesheet">
+<link  href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet">
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-function.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-main.js"></script>
+</head>
+<body>
+<!--头部-->
+{dede:include filename="head.htm"/}
+<!--轮播图-->
+<div class="w middle-box">
+	<div class="slides">
+	<div class="slideInner">
+        <a href="{dede:global.cfg_basehost/}/activity/openred/" style="background: url({dede:global.cfg_basehost/}/images/sales/2017year_banner.jpg) 50% 0 no-repeat;" title="怡萧行全屋家具定制2017年开门红,惠动全城,0元首付搬回家" target="_blank">
+		</a>
+		<a href="{dede:global.cfg_basehost/}/freedesign/" style="background: url({dede:global.cfg_templets_skin/}/images/banner_4.jpg) 80% 0 no-repeat;" title="0元设计家,抢1100元免费设计大礼包" target="_blank">
+		</a>
+		<a href="{dede:global.cfg_basehost/}/case/"  class="slide3" style="background: url({dede:global.cfg_templets_skin/}/images/banner_2.jpg) 80% 0 no-repeat;" title="享定制家具 创新生活家" target="_blank">
+		</a>
+		<a href="{dede:global.cfg_basehost/}/designer/" style="background: url({dede:global.cfg_templets_skin/}/images/banner_3.jpg) 80% 0 no-repeat;" title="我家就要听我的" target="_blank">
+		</a>
+	</div>
+	<div class="nav2">
+		<a class="prev" href="javascript:;"></a>
+		<a class="next" href="javascript:;"></a>
+	</div>
+</div>
+	<!-- js调用部分begin -->
+	<script src="{dede:global.cfg_templets_skin/}/js/slide.js"></script>
+	<script >
+	$(document).ready(function() {
+		$(".slideInner").slide({
+			slideContainer: $('.slideInner a'),
+			effect: 'easeOutCirc',
+			autoRunTime: 5000,
+			slideSpeed: 1000,
+			nav: true,
+			autoRun: true,
+			prevBtn: $('a.prev'),
+			nextBtn: $('a.next')
+		})
+	})
+	</script>
+	<!-- js调用部分end -->
+
+<!--内容-->
+<div class="clfy_opt" style="margin-top:20px;">
+	<div class="sp">
+		<div class="cl">
+			<span class="hx_icon"></span>
+			<span class="sp_text">户型</span>
+		</div>
+		<div class="cr">
+			{dede:channel     row='9'  typeid ='117'     type ='son' }
+            		<a class="selected" href='[field:typeurl/]' title="全屋家具定制">[field:typename/]</a>
+        		{/dede:channel}
+		</div>
+	</div>
+	<div class="fun" style="height:77px">
+        <div class="cl" style="line-height:114px">
+            <span class="qx_icon"></span>
+            <span class="fun_text">区域</span>
+        </div>
+        <div class="cr" style="width:90%;line-height:114">
+            		{dede:channel     row='13'  typeid ='118'     type ='son' }
+            		<a class="selected" href='[field:typeurl/]' title="全屋家具定制">[field:typename/]</a>
+        		{/dede:channel}
+        </div>
+    </div>
+	<div class="st">
+		<div class="cl">
+			<span class="st_icon"></span>
+			<span class="st_text">风格</span>
+		</div>
+		<div class="cr">
+			{dede:channel     row='9'  typeid ='119'     type ='son' }
+            		<a class="selected" href='[field:typeurl/]' title="全屋家具定制">[field:typename/]</a>
+        		{/dede:channel}
+		</div>
+	</div>
+</div>
+<div class="width clearfix nav-top-total font-black">
+	<span class="nav-top-total-title">最新案例</span>
+</div>
+<div class="width clearfix style-pic-box font-black">
+	<div class="style-pic-box-left font-black" style=" width: 740px;height: 275px;">
+		<div class="style-pic-right-top">
+			{dede:list pagesize='6' orderby='pubdate' channelid='2' typeid="117" limit='0,3'}
+			<div class="style-right-img-3 " style="margin-right:0px; height:262px; margin-top:0px; width:250px;">
+				<a target="_blank" href="[field:arcurl/]" title="环保家具定制案例">
+                			<div class="port-1 effect-2">
+						<div class="image-box" style="width:260px; height:262px;">
+							<img src="[field:litpic function=firstimg('@me')/]" alt="低调简约入户柜,怡萧行家具定制案例,武汉衣柜定制"  width="380px;">
+						</div>
+						<div class="text-desc">
+							<div class="fade-to-slide-box">
+								<p class="fade-to-slide-name">[field:title/]</p>
+								<div class="fade-to-slide-num">
+									<span class="fade-to-slide-num-border">热销：[field:click/]</span>
+									<span>收藏：[field:click/]</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>			
+			{/dede:list}
+		</div>
+	</div>
+	<div class="style-pic-box-right" style="width: 440px;height: 525px;">
+		{dede:arclist idlist='342'}
+		<div class="style-pic-img-1">
+			<a target="_blank" href="[field:arcurl/]" title="全屋家具定制案例">
+            			<div class="port-1 effect-2">
+					<div class="image-box" style="width:440px; height:525px;">
+						<img src="[field:litpic function=firstimg('@me')/]" alt="简欧暖白风小屋,怡萧行,武汉衣柜定制" width="700px;">
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">[field:title/]</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：[field:click/]</span>
+								<span>收藏：[field:click/]</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		{/dede:arclist}
+	</div>
+</div>
+<div class="width clearfix nav-top-total font-black">
+	<span class="nav-top-total-title">经典案例</span>
+</div>
+<div class="width clearfix hot-pic-box font-black">
+	<div class="hot-pic-box-left">
+		<div class="hot-pic-left-top">
+			<div class="hot-pic-img-1">
+				<a target="_blank" href="/case/modern.html" title="定制案例">
+                <div class="port-1 effect-2">
+					<div class="image-box" style="width:692px; height:374px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/keting.jpg" alt="现代简约时尚小屋,怡萧行定制案例,武汉衣柜定制">
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+								<p class="fade-to-slide-name">现代简约时尚小屋</p>
+								<div class="fade-to-slide-num">
+									<span class="fade-to-slide-num-border">热销：12578</span>
+									<span>收藏：909</span>
+								</div>
+						</div>
+					</div>
+				</div>
+                </a>
+			</div>
+			<div class="hot-pic-img-2">
+				<a target="_blank" href="/case/classic.html" title="全屋家具定制案例">
+                <div class="port-1 effect-2">
+					<div class="image-box" style="width:249px; height:374px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/quanwu2.jpg" alt="现代简约经典全屋,怡萧行定制案例,武汉衣柜定制">
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+								<p class="fade-to-slide-name">现代简约经典全屋</p>
+								<div class="fade-to-slide-num">
+									<span class="fade-to-slide-num-border">热销：3769</span>
+									<span>收藏：1572</span>
+								</div>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+            <div class="hot-pic-img-2">
+				<a target="_blank" href="/case/balcony.html" title="环保家具定制案例">
+                <div class="port-1 effect-2">
+					<div class="image-box" style="width:249px; height:374px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/yangtai.jpg" alt="简约大方阳台柜,怡萧行定制案例,武汉衣柜定制">
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+								<p class="fade-to-slide-name">简约大方阳台柜</p>
+								<div class="fade-to-slide-num">
+									<span class="fade-to-slide-num-border">热销：3769</span>
+									<span>收藏：1572</span>
+								</div>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="hot-pic-img-3 margin0">
+			<a target="_blank" href="/case/european.html" title="家具案例">
+            <div class="port-1 effect-2">
+					<div class="image-box" style="width:224px; height:200px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/woshi.jpg" alt="现代时尚欧式卧室定制,怡萧行家具定制案例,武汉衣柜定制">
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+								<p class="fade-to-slide-name">现代时尚欧式卧室定制</p>
+								<div class="fade-to-slide-num">
+									<span class="fade-to-slide-num-border">热销：17698</span>
+									<span>收藏：4836</span>
+								</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="hot-pic-img-3 ">
+			<a target="_blank" href="/case/diningroom.html" title="整体衣柜定制案例">
+             <div class="port-1 effect-2">
+					<div class="image-box" style="width:224px; height:200px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/canting.jpg" alt="现代简约客餐厅,怡萧行定制案例,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+								<p class="fade-to-slide-name">现代简约客餐厅</p>
+								<div class="fade-to-slide-num">
+									<span class="fade-to-slide-num-border">热销：10910</span>
+									<span>收藏：1847</span>
+								</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="hot-pic-img-3 ">
+			<a target="_blank" href="/case/warmstudy.html" title="家具案例">
+             <div class="port-1 effect-2">
+					<div class="image-box" style="width:224px; height:200px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/shufang.jpg" alt="儿童卧室温馨书房,怡萧行定制案例,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+								<p class="fade-to-slide-name">儿童卧室温馨书房</p>
+								<div class="fade-to-slide-num">
+									<span class="fade-to-slide-num-border">热销：1801</span>
+									<span>收藏：2397</span>
+								</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="hot-pic-img-3 " style="width:239px;">
+			<a target="_blank" href="/case/simple.html" title="全屋家具订做">
+            <div class="port-1 effect-2">
+					<div class="image-box" style="width:239px; height:200px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/quanwu1.jpg" alt="沉稳大气简约小屋,怡萧行定制案例,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">沉稳大气简约小屋</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：6137</span>
+								<span>收藏：1426</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+        <div class="hot-pic-img-3 " style="width:239px;">
+			<a target="_blank" href="/case/bobbi.html" title="环保家具定制案例">
+            <div class="port-1 effect-2">
+					<div class="image-box" style="width:239px; height:200px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/baby.jpg" alt="梦幻芭比粉儿童房,怡萧行整体衣柜定制案例,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">梦幻芭比粉儿童房</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：6137</span>
+								<span>收藏：1426</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		</div>
+</div>
+</div>
+<div class="width clearfix nav-top-total font-black">
+	<span class="nav-top-total-title">欧式风格</span>
+</div>
+<div class="width clearfix style-pic-box font-black">
+	<div class="style-pic-box-left">
+		<div class="style-pic-img-1">
+			<a target="_blank" href="/case/warmwhite.html" title="全屋家具定制案例">
+            <div class="port-1 effect-2">
+					<div class="image-box" style="width:420px; height:525px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/oushiquanwu.jpg" alt="简欧暖白风小屋,怡萧行,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">简欧暖白风小屋</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：557</span>
+								<span>收藏：138</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="style-pic-box-right font-black">
+		<div class="style-pic-right-top">
+		<div class="style-right-img-1">
+				<a target="_blank" href="/case/colourful.html" title="全屋家具定制案例">
+                <div class="port-1 effect-2">
+					<div class="image-box" style="width:375px; height:275px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/oushiquanwu2.jpg" alt="缤纷多彩简欧定制,怡萧行,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">缤纷多彩简欧定制</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：4672</span>
+									<span>收藏：2144</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="style-right-img-2">
+				<a target="_blank" href="/case/comfortable.htm" title="家具案例">
+                <div class="port-1 effect-2">
+					<div class="image-box" style="width:375px; height:275px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/oushiquanwu3.jpg" alt="悠然惬意简欧住宅,怡萧行定制案例,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">悠然惬意简欧住宅</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：4875</span>
+									<span>收藏：679</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="style-right-img-3 ">
+				<a target="_blank" href="/case/lowkey.html" title="环保家具定制案例">
+                <div class="port-1 effect-2">
+					<div class="image-box" style="width:246px; height:240px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/oushiruhu.jpg" alt="低调简约入户柜,怡萧行家具定制案例,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">低调简约入户柜</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：9649</span>
+									<span>收藏：1166</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="style-right-img-3 ">
+				<a target="_blank" href="/case/tender.html" title="全屋家具定制案例">
+                <div class="port-1 effect-2">
+					<div class="image-box" style="width:246px; height:240px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/oushifengge5.jpg" alt="温润如玉静谧客厅,怡萧行定制案例,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">温润如玉静谧客厅</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：586</span>
+									<span>收藏：472</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="style-right-img-3 style-img">
+				<a target="_blank" href="/case/elegant.html" title="定制案例">
+                <div class="port-1 effect-2">
+					<div class="image-box" style="width:246px; height:240px;">
+						<img src="{dede:global.cfg_templets_skin/}/images/oushicanting.jpg" alt="简欧式典雅餐厅,怡萧行,武汉衣柜定制" >
+					</div>
+					<div class="text-desc">
+						<div class="fade-to-slide-box">
+							<p class="fade-to-slide-name">简欧式典雅餐厅</p>
+							<div class="fade-to-slide-num">
+								<span class="fade-to-slide-num-border">热销：6945</span>
+									<span>收藏：920</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="width clearfix nav-top-total font-black">
+	<span class="nav-top-total-title">现代简约</span>
+</div>
+<div class="width clearfix beauty-pic-box">
+	<div class="beauty-pic-box-top font-black">
+		<div class="beauty-pic-list-box">
+             <div class="beauty-pic-list-box">
+			<div class="beauty-pic-list-mune-2">
+				<p>卧室</p>
+			</div>
+			<ul class="beauty-pic-list">
+			<li>
+					<a target="_blank" href="/case/bestselling.htm" title="定制案例">
+						<div class="beauty-list-img">
+							<img src="{dede:global.cfg_templets_skin/}/images/woshi_1.jpg" alt="畅销经典款 高档简约床,怡萧行定制案例,武汉衣柜定制">
+						</div>
+						<p class="beauty-pic-list-name font-black">畅销经典款 高档简约床</p>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="/case/dualuse.html" title="家具定制案例">
+						<div class="beauty-list-img">
+							<img src="{dede:global.cfg_templets_skin/}/images/woshi_2.jpg" alt="美式帝王床 头层水牛真皮软包 1.8米精致描金雕花床,怡萧行,武汉橱柜定制">
+						</div>
+						<p class="beauty-pic-list-name font-black">两用空间 时尚简约卧室</p>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="/case/hotmoney.html" title="家具定制案例">
+						<div class="beauty-list-img">
+							<img src="{dede:global.cfg_templets_skin/}/images/woshi_3.jpg" alt="热销款 至美高档绿色空间,怡萧行,武汉橱柜定制">
+						</div>
+						<p class="beauty-pic-list-name font-black">热销款 至美高档绿色空间</p>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="/case/popularity.html" title="家具定制案例">
+						<div class="beauty-list-img">
+							<img src="{dede:global.cfg_templets_skin/}/images/woshi_4.jpg" alt="人气爆款 1.8米头层真皮软床 婚床 软体床,怡萧行,武汉橱柜定制">
+						</div>
+						<p class="beauty-pic-list-name font-black">人气爆款 奢华高贵卧室</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+			<div class="beauty-pic-list-mune-1">
+				<p>客厅</p>
+			</div>
+			<ul class="beauty-pic-list">
+				<li>
+					<a target="_blank" href="/case/extreme.html" title="怡萧行定制案例">
+						<div class="beauty-list-img">
+							<img src="{dede:global.cfg_templets_skin/}/images/keting_1.jpg" alt="至尊之享 休闲空间 成功人士的首选洽谈室,怡萧行,武汉橱柜定制">
+						</div>
+						<p class="beauty-pic-list-name font-black">至尊之享 休闲空间 成功人士的首选洽谈室</p>
+					</a>
+				</li>
+                <li>
+					<a target="_blank" href="/case/seiko.html" title="怡萧行定制案例">
+						<div class="beauty-list-img">
+							<img src="{dede:global.cfg_templets_skin/}/images/keting_2.jpg" alt="全网人气客厅 精工雕琢 简欧风格,怡萧行,武汉橱柜定制">
+						</div>
+						<p class="beauty-pic-list-name font-black">全网人气客厅 精工雕琢 简欧风格</p>
+					</a>
+				</li>
+                <li>
+					<a target="_blank" href="/case/touch.html" title="怡萧行定制案例">
+						<div class="beauty-list-img">
+							<img src="{dede:global.cfg_templets_skin/}/images/keting_3.jpg" alt="名流之选 触碰纯白 简约大气客厅,怡萧行,武汉橱柜定制">
+						</div>
+						<p class="beauty-pic-list-name font-black">名流之选 触碰纯白 简约大气客厅</p>
+					</a>
+				</li>
+                <li>
+					<a target="_blank" href="/case/experience.html" title="怡萧行定制案例">
+						<div class="beauty-list-img">
+							<img src="{dede:global.cfg_templets_skin/}/images/keting_4.jpg" alt="时尚臻品 蓝白风 极致体验,怡萧行,武汉橱柜定制">
+						</div>
+						<p class="beauty-pic-list-name font-black">时尚臻品 蓝白风 极致体验</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--底部-->
+{dede:include filename="foot2.htm"/}
+</body>
+</html>

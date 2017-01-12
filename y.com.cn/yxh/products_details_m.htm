@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="author" content="怡萧行橱柜定制官网" />
+<meta name="copyright" content="怡萧行橱柜定制官网|www.yixiaohang.com.cn|版权所有" />
+<meta name="googlebot" content="index, follow" />
+<meta name="robots" content="index, follow" />
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="icon" type="image/png" href="{dede:global.cfg_mobileurl/}/assets/i/favicon.png">
+<link rel="stylesheet" href="{dede:global.cfg_mobileurl/}/assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_mobileurl/}/assets/css/goods_base.css" >
+<link rel="stylesheet" href="{dede:global.cfg_mobileurl/}/assets/css/swiper.min.css">
+<script src="{dede:global.cfg_mobileurl/}/assets/js/jquery.js"></script>
+<script src="{dede:global.cfg_mobileurl/}/assets/js/index.js"></script>
+<script src="{dede:global.cfg_mobileurl/}/assets/js/mark.js"></script>
+<script src="{dede:global.cfg_mobileurl/}/assets/js/swiper.min.js"></script>
+</head>
+<body>
+<header class="header">
+  <a href="{dede:global.cfg_mobileurl/}/list.php?tid=1" class="fan">
+      <img src="{dede:global.cfg_mobileurl/}/assets/images/fan.png">
+    </a>
+  <h3>产品详情</h3>
+  <!--<a class="header_more" href=""></a>-->
+      <a class="header_more" href="javascript:;"></a>
+      <!--<a href="tel:4008841868" class="kf_phone"></a>-->
+</header>
+{dede:include filename="nav_m.htm"/}
+<!-- 轮播 -->
+<div style="-webkit-transform:translate3d(0,0,0);">
+	<!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            {dede:productimagelist}
+            <div class="swiper-slide"><img src="[field:imgsrc/]"></div>
+            {/dede:productimagelist}
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        autoHeight: true, //enable auto height
+    });
+    </script>
+</div>
+<!-- title -->
+<div class="mall-info">
+  <div class="mall-bt">{dede:field.title/}</div>
+  <!-- <div class="mall-may"><i>参考价：</i>{dede:field.pro_refe/}<i style="color:#f60;"> 元/㎡</i></div>
+  <div class="mall-ps"><i></i><span><img src="{dede:global.cfg_mobileurl/}/assets/images/good/like.png"><em>0</em></span></div> -->
+<!--   <input type="hidden" id="goods_id" value="253"/>
+<input type="hidden" id="click_likes" value="0"/> -->
+</div>
+<!-- quan -->
+<div class="quan">
+  <ul>
+    <li><img src="{dede:global.cfg_mobileurl/}/assets/images/good/01.png"><i>正品保证</i></li>
+    <li><img src="{dede:global.cfg_mobileurl/}/assets/images/good/02.png"><i>EO级环保板材</i></li>
+    <li><img src="{dede:global.cfg_mobileurl/}/assets/images/good/03.png"><i>健康环保</i></li>
+  </ul>
+</div>
+<div class="info-box">
+	<i>商品详情</i>
+	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_01.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_02.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_03.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_04.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_05.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_06.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_07.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_08.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_09.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_10.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_11.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_12.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_13.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_14.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_15.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_16.jpg">
+  	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_17.jpg">
+	{dede:productimagelist}
+     <img class="lazy" src="[field:global name=cfg_mobileurl /]/assets/images/grey.gif" data-original="[field:imgsrc/]" alt=""  style="margin:3px 0px;" />
+    {/dede:productimagelist}
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_19.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_20.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_21.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_22.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_23.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_24.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_25.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_26.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_27.jpg">
+      	 <img class="lazy" src="{dede:global.cfg_mobileurl/}/assets/images/grey.gif" data-original="{dede:global.cfg_mobileurl/}/assets/images/products/product_28.jpg">
+</div>
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post" class="form-main" name="tForm">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="6" />
+<input type="hidden" name="do" value="2" />
+    	<div class="ban"  id="bmk">
+        	<div class="ban_bt">10秒抢0元设计
+            	<div class="ban_bt_left"><i></i><span></span></div>
+            	<div class="ban_bt_right"><i></i><span></span></div>
+  	</div>
+	<div class="ban_box">
+		<div class="ban_txt">
+			<input name="m_details_name" type="text" id="m_details_name"  placeholder="请输入姓名" value=''>
+      		</div>
+		<div class="ban_txt">
+			<input maxlength="11" type="number"  name="m_details_phone" id="m_details_phone" placeholder="请输入手机号码">
+		</div>
+          	<div class="ban_txt">
+					<input type='text' name='m_details_region' id='m_details_region'  placeholder="请输入小区地址" value=''/>
+				</div>
+            <div class="ban_btn">
+			<input type="submit" name="submit" value="火热报名中"  onclick="return check(tForm)"/>
+		</div>
+        </div>
+	</div>
+	<input type='hidden' name='m_details_area' id='m_details_area' value='手机端产品详情页表单' />
+	<input type='hidden' name='m_details_date' id='m_details_date' value='' />
+	<input type="hidden" name="dede_fields" value="m_details_name,text;m_details_phone,text;m_details_area,text;m_details_date,text;m_details_region,text" />
+		<input type="hidden" name="dede_fieldshash" value="c6b085a61c0add7ba48b850f80e35b4b" />
+</form>
+<div class="list-bot">已经到底啦</div>
+<!-- online -->
+<div class="ge"></div>
+<div class="footer_consule">
+   	<div class="bg"></div>
+  	<div class="cs_designer">
+            <a href="tel:4000-868-863" target="_blank">电话咨询</a>
+            <a class="alert_popup_apply" rel="nofollow" href="#bmk">申请免费设计</a>
+   	</div>
+</div>
+<!-- right -->
+<div class="right">
+  <!-- <a href="/online/"  class="pcleyu"><img src="{dede:global.cfg_mobileurl/}/assets/images/kefu.png"></a> -->
+    <a href="#" style="display:none;"><img src="{dede:global.cfg_mobileurl/}/assets/images/top.png"></a>
+</div>
+<script language="javascript" src="http://dkt.zoosnet.net/JS/LsJS.aspx?siteid=DKT98506049&float=1&lng=cn"></script>
+<script type="text/javascript" src="{dede:global.cfg_mobileurl/}/assets/js/jquery.lazyload.js"></script>
+<script type="text/javascript">
+      $(function() {
+      $("img.lazy").lazyload({
+      		placeholder : "{dede:global.cfg_mobileurl/}/assets/images/grey.gif",
+          		effect: "fadeIn",
+          		threshold : 200
+      	});
+  	});
+</script>
+</body>
+</html>

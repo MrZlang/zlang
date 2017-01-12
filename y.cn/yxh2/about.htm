@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link  href="{dede:global.cfg_templets_skin/}/style/layout.css" rel="stylesheet">
+<link  href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet">
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-function.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-main.js"></script>
+</head>
+<body>
+<!--头部-->
+{dede:include filename="head.htm"/}
+<!--主要内容-->
+<div class="aboutus">
+    <!--左侧导航-->
+    <div class="ab_left">
+    	<div class="ab_red"></div>
+        <div class="ab_nav">
+        	<p class="nav1">关于我们</p>
+            <p class="nav2">ABOUT&#160;US</p>
+            <div class="nav3">
+				<ul>
+                	<li><a href="{dede:global.cfg_basehost/}/about/introdution/" title="怡萧行家具定制" >品牌简介</a></li>
+                    <i></i>
+                    <li><a href="{dede:global.cfg_basehost/}/about/strength/" title="怡萧行家具定制" >品牌实力</a></li>
+                    <i></i>
+                    <li><a href="{dede:global.cfg_basehost/}/about/honor/" title="怡萧行家具定制" >品牌荣誉</a></li>
+                    <i></i>
+                    <li><a href="{dede:global.cfg_basehost/}/about/process/"  title="怡萧行家具定制">产品工艺</a></li>
+                    <i></i>
+                    <li><a href="{dede:global.cfg_basehost/}/about/service/"  title="怡萧行家具定制">服务流程</a></li>
+                    <i></i>
+			<li><a href="{dede:global.cfg_basehost/}/about/problems/" title="怡萧行家具定制" >常见问题</a></li>
+                    <i></i>                    
+                </ul>
+            </div>
+            <!--nav3结束-->
+        </div>
+        <!--ab_nav结束-->
+    </div>
+    <!--左侧导航end-->
+    
+    <!--右侧详情-->
+    <div class="ab_right">
+     <div class="ab_red"></div>
+     {dede:field.content/} 
+    </div>   
+    <!--右侧详情end-->
+</div>
+
+<!--底部-->
+{dede:include filename="foot2.htm"/}
+</body></html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link  href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/style/layout.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-function.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-main.js"></script>
+</head>
+<body>
+<!--头部-->
+{dede:include filename="head.htm"/} 
+
+<!--内容-->
+<div class="clfy_opt" style="margin-top:20px;">
+    <div class="sp">
+        <div class="cl">
+            <span class="sp_icon"></span>
+            <span class="sp_text">空间</span>
+        </div>
+        <div class="cr">
+        {dede:channel     row='9'  typeid ='8'     type ='son' }
+            <a class="selected" href='[field:typeurl/]' title="全屋家具定制">[field:typename/]</a>
+        {/dede:channel}
+        </div>
+    </div>
+    <div class="fun" style="height:77px">
+        <div class="cl" style="line-height:114px">
+            <span class="fun_icon"></span>
+            <span class="fun_text">功能</span>
+        </div>
+        <div class="cr" style="width:90%;line-height:114">
+            {dede:channel     row='19'  typeid ='9'     type ='son' }
+            <a class="selected" href='[field:typeurl/]' title="全屋家具定制">[field:typename/]</a>
+            {/dede:channel}
+        </div>
+    </div>
+    <div class="st">
+        <div class="cl">
+            <span class="st_icon"></span>
+            <span class="st_text">风格</span>
+        </div>
+        <div class="cr">
+            {dede:channel  row='5'  typeid ='10'     type ='son' }
+            <a class="selected" href='[field:typeurl/]' title="全屋家具定制">[field:typename/]</a>
+            {/dede:channel} 				
+        </div>
+    </div>
+</div>
+<div class="bar">
+    <div class="bar_l">
+        <div class="triple">
+            <!--<div class="rank">综合排列</div>-->
+            <div class="rule">
+                    <p class="rank">价格<span></span></p>
+                    <ul class="pr" style="display:none">
+                        <li><a href="{dede:global.cfg_basehost/}" title="全屋家具定制">价格从低到高</a></li>
+                        <li><a href="{dede:global.cfg_basehost/}">价格从高到低</a></li>
+                    </ul>
+            </div>
+            <div class="rule">
+                    <p class="rank">面积<span></span></p>
+                    <ul class="ar" style="display:none">
+                        <li><a href="{dede:global.cfg_basehost/}" title="全屋家具定制">面积从低到高</a></li>
+                        <li><a href="{dede:global.cfg_basehost/}" title="全屋家具定制">面积从高到低</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bar_r">
+        <div><a href="{dede:global.cfg_basehost/}" title="整体衣柜定制">最热</a></div>
+        <div><a href="{dede:global.cfg_basehost/}" title="橱柜定制">最新</a></div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+
+<!--商品排列-->
+<div class="sppl">
+  <dl>
+  {dede:list pagesize='9' orderby='pubdate' typeid ='1'}
+   <dt>
+    <div class="spplimg"><a href="[field:arcurl/]" title="榻榻米定做"><img alt="榻榻米订做,怡萧行,武汉家具定制" src="[field:litpic/]" style=" width:368px; height:275px;"/></a></div>
+    <div class="box-1 info">
+        <div class="name"><a href="[field:arcurl/]" title="全屋家具定制">[field:title/]</a></div>
+        <p><a href="http://www.yixiaohang.cn/online/" class="btn" title="全屋家具定制" target="_blank">在线咨询</a></p>
+    </div>
+   </dt>
+   {/dede:list}
+  </dl>
+</div>
+
+<div class="page_list">
+<ul>
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="2"/}
+</ul>
+</div>
+
+<!--底部-->
+{dede:include filename="foot2.htm"/}
+</body>
+<html>

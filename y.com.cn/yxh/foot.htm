@@ -1,0 +1,114 @@
+<div class="foot" id="contactfoot">
+        <div class="foot-content clearfix">
+            <span class="fl">
+                全屋定制 怡萧行有约
+            </span>
+            <div class="fl clearfix" style="margin-left:47px;">
+                <a target="blank" class="ZX-ico" href="{dede:global.cfg_basehost/}/online/" title="咨询我吧">
+                </a>
+                <a href="javascript:void(0);" class="WX-ico">
+                </a>
+                <a href="http://weibo.com/u/2161004357" target="_blank" class="WB-ico">
+                </a>
+            </div>
+            <span class="fr m_wnews clearfix">
+                <span class="fl">
+                    欢迎拨打
+                </span>
+                <div class="tempWrap" style="position:relative; height:20px">
+                    <span id="miniNewsRegion" class="fl" style="line-height: 20px; margin: 0px; height: 80px; position: relative; padding: 0px; top: -20px;">
+                        <div style="height: 20px;" class="clone">027-82723789</div>
+                        <div style="height: 20px;">&nbsp;&nbsp;4000-868-863</div>
+                        <div style="height: 20px;">027-82723789</div>
+                        <div style="height: 20px;" class="clone">&nbsp;&nbsp;4000-868-863</div>
+                    </span>
+                </div>
+            </span>
+            <script type="text/javascript">
+                jQuery(".m_wnews").slide({ mainCell:"#miniNewsRegion", effect:"topLoop", autoPlay:true});
+            </script>
+        </div>
+        <span class="foot-font" style="margin:0 auto;display:block;width:855px;color:#333333" >
+        地址：中国 湖北省 武汉市 江岸区 武汉天地特1号   24小时咨询热线：4000-868-863
+        </span>
+        <span class="foot-font" style="margin:0 auto;display:block;width:855px;">
+        Copyright @ 2004-2016 All Rights Reserved 鄂ICP备16004930号
+        </span>
+        <div class="links-box1" id="eject">
+            <div style="float:left; width:70px;"><strong>友情链接：</strong></div>
+            <div style="float:right; width:1130px;">{dede:flink row='100' linktype=2/}</div>
+        </div>
+        <div id="read-more"></div>
+    </div>
+<!--侧栏报名通道-->
+<div class="suggest" style="display:none">
+  <p class="tctxt">今天仅剩<span class="re_pe_nums">98</span>个名额</p>
+  <div class="complain_close">
+     <a href="javascript:remove_complain();">
+    <img src="{dede:global.cfg_templets_skin/}/images/publicclose.png">
+    </a>
+  </div>
+  <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+    <input type="hidden" name="action" value="post" />
+    <input type="hidden" name="diyid" value="1" />
+    <input type="hidden" name="do" value="2" />
+ <div class="form publicform">
+ <i>姓名:</i>
+   <div class="sidebar" id="vediousername">
+          <input class="input_2" type='text' name='ordername' id='ordername'  value='' placeholder="您的称呼" maxlength="11" />
+          <p id="vediorong" style="display: none; color:#ff5a00;">请输入您的姓名</p>
+   </div>  
+   <i>手机:</i> 
+   <div class="sidebar2" id="vediouserphone">
+         <input class="input_2" type='text' name='orderphone' id='orderphone'  value=''  placeholder="您的手机号码" maxlength="11"/>
+         <p id="vediorong2" style="display: none; color:#ff5a00;">请输入正确的手机号</p>
+   </div>   
+   <input type='hidden' name='orderarea' id='orderarea' value='侧栏预约' />
+   <input type='hidden' name='orderdate' id='orderdate' value='' />
+   <input type="hidden" name="dede_fields" value="ordername,text;orderphone,text;orderarea,text;orderdate,text" />
+   <input type="hidden" name="dede_fieldshash" value="92612094e7e9caf3fd0fc087677e914c" />
+   <input type="submit" name="submit" onclick="return AddOrder('apply-1');"  value=""  class="bt"/>
+ </div>
+</form>
+</div>
+</div>
+<!--回到顶部-->
+<div class="up-top" onclick="scrollToPos('body', 0);">
+</div>
+<!--弹窗-->
+<div class="fix-box">
+  <div class="fixleft"></div>
+    <div class="fixbottom" style="display:none;">
+      <div class="form02">
+        <div class="xiaoren"><img src="{dede:global.cfg_templets_skin/}/images/small-children.png"/></div>
+        <div class="form02left"><img src="{dede:global.cfg_templets_skin/}/images/wenzi.png"/></div>
+        <div class="form02right">
+        <form action="/plus/diy.php" enctype="multipart/form-data" method="post" class="clannel-task">
+        <input type="hidden" name="action" value="post" />
+        <input type="hidden" name="diyid" value="5" />
+        <input type="hidden" name="do" value="2" />
+            <div class="row-3"><p>已为<span>27918</span>名业主提供免费家居定制方案</p></div>
+        <div class="row">
+                <input type='text' name='botname' id='botname' value='' class="row-l" placeholder="您的称呼"/>
+                <div id="markname" onLoad=setTimeout ("markname.style.display='none'",1000)>请输入您的称呼</div>
+                <input type='text' name='botphone' id='botphone' value='' class="row-r" placeholder="您的手机"/>
+                <div id="markphone">请输入您的手机号</div>
+                <div id="markphone2">请输入正确的手机号</div>
+        </div>
+      <div class="row-2">
+        <input type="submit" name="submit" onclick="return AddOrder('apply-5');" value="提 交" class='fix-box-btn'/>
+      </div>
+      <input type='hidden' name='botarea' id='botarea' value='底部弹出表单申请'/>
+      <input type='hidden' name='botdate' id='botdate' value=''/>
+      <input type="hidden" name="dede_fields" value="botname,text;botphone,text;botarea,text;botdate,text" />
+      <input type="hidden" name="dede_fieldshash" value="c63dcfdcee1ebc486d3bde288f0805a7" />
+      </form>
+        </div>
+
+        <div class="form-wx"><img src="{dede:global.cfg_templets_skin/}/images/erweima.png" alt="家具定制,怡萧行,武汉家具定制" title="家具定制">
+           <p>扫一扫关注</p>
+        </div>
+        <div class="form02close"> <a href="javascript:;" class="close channel-close-btn" data-flag="0"></a> </div>
+   </div>
+</div>
+<div class="complain_mask" style="background:rgba(0,0,0,.8);width:100%;height:100%;position:fixed;z-index:9998;display:none;top:0;left:0;"></div>

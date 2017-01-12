@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{dede:global.cfg_webname/}</title>
+<meta name="Keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="Description" content="{dede:global.cfg_description/}" />
+<meta charset="gb2312">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="icon" type="image/png" href="assets/i/favicon.png">
+<link rel="stylesheet" type="text/css" href="assets/css/index.css" >
+<link rel="stylesheet" type="text/css" href="assets/css/common.css" >
+<link rel="stylesheet" href="assets/css/swiper.min.css">
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/mark.js"></script>
+</head>
+<body>
+<!--header begin-->
+<header class="header">
+	<a class="logo" href="{dede:global.cfg_mobileurl/}/"></a>
+ 	<div class="header_search">
+		<form>
+			<input type="text" name="keyword" class="search_inp" placeholder="怡萧行衣柜">
+		</form>
+	</div>
+	<!--<a class="header_more" href=""></a>-->
+      <a class="header_more" href="javascript:;"></a>
+      <!--<a href="tel:4008841868" class="kf_phone"></a>-->
+</header>
+{dede:include filename="nav_m.htm"/}
+<!-- banner -->
+<div class="banner">
+	<!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        	<div class="swiper-slide"><a href="{dede:global.cfg_mobileurl/}/openred.html" title="武汉全屋定制"><img src="assets/images/banner_05.jpg" title="全屋定制" alt="武汉全屋定制,怡萧行,家具定制"></a></div>
+            <div class="swiper-slide"><a href="{dede:global.cfg_mobileurl/}/list.php?tid=1" title="武汉全屋定制"><img src="assets/images/banner_01.jpg" title="全屋定制" alt="武汉全屋定制,怡萧行,家具定制"></a></div>
+            <div class="swiper-slide"><a href="{dede:global.cfg_mobileurl/}/list.php?tid=3" title="武汉衣柜定制"><img src="assets/images/banner_02.jpg" title="全屋定制" alt="武汉全屋定制,怡萧行,衣柜定制"></a></div>
+            <!-- <div class="swiper-slide"><a href="{dede:global.cfg_mobileurl/}/list.php?tid=2" title="武汉家具定制"><img src="assets/images/banner_03.jpg" title="全屋定制" alt="武汉全屋定制,怡萧行,橱柜定制"></a></div> -->
+            <div class="swiper-slide"><a href="{dede:global.cfg_mobileurl/}/list.php?tid=10" title="武汉橱柜定制"><img src="assets/images/banner_04.jpg" title="全屋定制" alt="武汉全屋定制,怡萧行,全屋定制"></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });
+    </script>
+</div>
+<!-- menu -->
+<div class="menu">
+	<a href="{dede:global.cfg_mobileurl/}/product_nav_m.html" title="家具定制">
+		<img src="assets/images/top_icon_1.png" title="武汉全屋定制" alt="武汉全屋定制,怡萧行,全屋定制">
+		<span>选商品</span>
+	</a>
+	<a href="{dede:global.cfg_mobileurl/}/activityzone_m.html" title="全屋定制">
+		<img src="assets/images/top_icon_5.png" title="武汉家具定制" alt="武汉家具定制,怡萧行,家具定制">
+		<span>活动专区</span>
+	</a>
+	<a href="{dede:global.cfg_mobileurl/}/closet_budget_m.html" title="衣柜定制">
+		<img src="assets/images/top_icon_2.png" title="武汉衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+		<span>算预算</span>
+	</a>
+	<a href="{dede:global.cfg_mobileurl/}/list.php?tid=2" title="橱柜定制">
+		<img src="assets/images/top_icon_6.png" title="武汉橱柜定制" alt="武汉橱柜定制,怡萧行,橱柜定制">
+		<span>小区案例</span>
+	</a>
+	<a href="{dede:global.cfg_mobileurl/}/list.php?tid=3" title="环保家具定制" alt="武汉环保家具,怡萧行,环保定制">
+		<img src="assets/images/top_icon_4.png" title="武汉环保家具定制" alt="武汉环保家具定制,怡萧行,环保家具定制">
+		<span>最新动态</span>
+	</a>
+</div>
+<!-- main -->
+<div class="main">
+	<ul>
+		<li>
+			<div class="main-bt"><i>美图·小区案例</i><a href="{dede:global.cfg_mobileurl/}/list.php?tid=2" class="main-move" title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保定制家具">更多></a></div>
+      				<a href="{dede:global.cfg_mobileurl/}/list.php?tid=2" class="main-img" title="武汉全屋定制" ><img src="assets/images/banner_03.jpg" title="武汉全屋定制" alt="武汉全屋定制,怡萧行,家具定制"></a>
+      				{dede:arclist orderby='pubdate'  typeid ='2' row='3'  channelid='2' titlelen=10 addfields='pro_style'}
+				<a class="main-box" href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]"  title="武汉家具定制" >
+			   		<span>[field:pro_style/]</span>
+			     		<i>[field:title/]...</i>
+			     		<img src="[field:litpic/]" title="武汉衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+			      	</a>
+			      	{/dede:arclist}
+		</li>
+		<li>
+			<div class="main-bt"><i>360°全景图·小区案例</i><a href="{dede:global.cfg_mobileurl/}/pano.html" class="main-move" title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保定制家具">更多></a></div>
+				<a class="main-box" href="http://www.kujiale.com/xiaoguotu/pano/3FO4KCC9SVP1"  title="武汉家具定制" >
+			   		<span>现代简约</span>
+			     		<i>保利才盛景苑..</i>
+			     		<img src="assets/images/main_01.jpg" title="武汉衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+			     	</a>
+			     	<a class="main-box" href="http://www.kujiale.com/xiaoguotu/pano/3FO4L420QHS0"  title="武汉家具定制" >
+			   		<span>现代简约</span>
+			     		<i>保利麓谷林语..</i>
+			     		<img src="assets/images/main_02.jpg" title="武汉衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+			     	</a>
+			     	<a class="main-box" href="http://www.kujiale.com/xiaoguotu/pano/3FO4JIA2114P"  title="武汉家具定制" >
+			   		<span>现代简约</span>
+			     		<i>万达御湖世家..</i>
+			     		<img src="assets/images/main_03.jpg" title="武汉衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+			     	</a>
+		</li>
+		<li>
+			<div class="main-bt"><i>扩容·让家多出20㎡</i><a href="{dede:global.cfg_mobileurl/}/list.php?tid=8" class="main-move" title="武汉橱柜定制">更多></a></div>
+      				<a href="{dede:global.cfg_mobileurl/}/list.php?tid=8" class="main-img" title="武汉橱柜定制"><img src="assets/images/main-banner.jpg" title="武汉橱柜定制" alt="武汉橱柜定制,怡萧行,橱柜定做"></a>
+      				{dede:arclist orderby='pubdate'  typeid ='8' row='3'  channelid='2' titlelen=10 addfields='pro_style'}
+				<a class="main-box" href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]"  title="环保家具定制">
+			   		<span>[field:pro_style/]</span>
+			     		<i>[field:title/]...</i>
+			     		<img src="[field:litpic/]" title="环保家具定制" alt="武汉环保家具,怡萧行,环保定制家具">
+			      	</a>
+			      	{/dede:arclist}
+		</li>
+		<li>
+			<div class="main-bt"><i>收纳·活用每一寸空间</i><a href="{dede:global.cfg_mobileurl/}/list.php?tid=9" class="main-move" title="武汉全屋定制" alt="武汉全屋定制,怡萧行,全屋定制">更多></a></div>
+      				<a href="{dede:global.cfg_mobileurl/}/list.php?tid=9" class="main-img" title="家具定制"><img src="assets/images/cat/pro_nav_ban_03.jpg" title="武汉家具定制" alt="武汉家具定制,怡萧行,家具定制"></a>
+				{dede:arclist orderby='pubdate'  typeid ='9' row='3'  channelid='2' titlelen=10 addfields='pro_style'}
+				<a class="main-box" href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]" title="家具定制">
+			   		<span>[field:pro_style/]</span>
+			     		<i>[field:title/]...</i>
+			     		<img src="[field:litpic/]" title="全屋定制" alt="武汉全屋定制,怡萧行, 全屋定制">
+			      	</a>
+			      	{/dede:arclist}
+		</li>
+		<li>
+			<div class="main-bt">
+				<i>定制·独一无二的新生活</i>
+				<a href="{dede:global.cfg_mobileurl/}/list.php?tid=10" class="main-move" title="橱柜定制"> 更多></a>
+			</div>
+      				<a href="{dede:global.cfg_mobileurl/}/list.php?tid=10" class="main-img" title="武汉橱柜定制"><img src="assets/images/cat/pro_nav_ban_05.jpg" title="武汉橱柜定制" alt="武汉橱柜定制,怡萧行,橱柜定做"></a>
+				{dede:arclist orderby='pubdate'  typeid ='10' row='3'  channelid='2' titlelen=10 addfields='pro_style'}
+				<a class="main-box" href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]"  title="武汉环保家具定制">
+			   		<span>[field:pro_style/]</span>
+			     		<i>[field:title/]...</i>
+			     		<img src="[field:litpic/]" title="武汉环保定制" alt="武汉环保家具定制,怡萧行,环保定制家具">
+			      	</a>
+			      	{/dede:arclist}
+		</li>
+	</ul>
+</div>
+<!-- bottom -->
+<div class="bottom">
+	<div class="friend_link">
+        	<div class="friend_select">
+            	<div class="select_hot sel_act">热门关注</div>
+            	<div class="select_friend ">友情链接</div>
+        	</div>
+        	<div class="friend_show">
+            	<div class="hot_show sh">
+                		<ul>
+					{dede:arclist row='4' orderby='hot' titlelen=25}
+                  		<a href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]"><li class="hot_li1"><div><span></span>[field:title/]...</div></li></a>
+					{/dede:arclist}
+     				</ul>
+            	</div>
+            	<div class="fre_show sh">
+                		<ul>
+					{dede:flink row='10' linktype=2/}
+					<div class="link_mores"></div>
+                		</ul>
+            	</div>
+        	</div>
+    	</div>
+  	<div class="bottom-bot">怡萧行全屋定制官方商城 鄂ICP备16004930号</div>
+</div>
+<!-- online -->
+<div class="ge"></div>
+<div class="footer_consule">
+   	<div class="bg"></div>
+  	<div class="cs_designer">
+            <a href="tel:4000-868-863" target="_blank">电话咨询</a>
+            <a class="alert_popup_apply pcleyu" >申请免费设计</a>
+   	</div>
+</div>
+<!-- 弹出表单 -->
+<div class="show">
+	<h1 class="lean">0元设计全屋家具</h1>
+	<div class="close"><img src="assets/images/close.png"></div>
+	<form action="/plus/diy.php" enctype="multipart/form-data" method="post" class="form-main" name="tForm">
+		<input type="hidden" name="action" value="post" />
+		<input type="hidden" name="diyid" value="6" />
+		<input type="hidden" name="do" value="2" />
+	    	<div class="ban"  id="bmk">
+			<div class="ban_box">
+				<div class="ban_txt">
+					<input name="m_details_name" type="text" id="m_details_name"  placeholder="请输入姓名" value=''>
+		      		</div>
+				<div class="ban_txt">
+					<input maxlength="11" type="number"  name="m_details_phone" id="m_details_phone" placeholder="请输入手机号码">
+				</div>
+				<div class="ban_txt">
+					<input type='text' name='m_details_region' id='m_details_region'  placeholder="请输入小区地址" value=''/>
+				</div>
+		            <div class="ban_btn">
+					<input type="submit" name="submit" value="火热报名中"  onclick="return check(tForm)"/>
+				</div>
+		      	</div>
+		</div>
+		<input type='hidden' name='m_details_area' id='m_details_area' value='首页底部预约报名' />
+		<input type='hidden' name='m_details_date' id='m_details_date' value='' />
+		<input type="hidden" name="dede_fields" value="m_details_name,text;m_details_phone,text;m_details_area,text;m_details_date,text;m_details_region,text" />
+		<input type="hidden" name="dede_fieldshash" value="7c55ef21705b27c07a9bcb4130ef73fb" />
+	</form>
+</div>
+<div class="show-mask"></div>
+<!-- right -->
+<div class="right">
+ 	<!-- <a href="/online/"  class="pcleyu"><img src="assets/images/kefu.png"></a> -->
+  	<a href="#" style="display:none;"><img src="assets/images/top.png"></a>
+</div>
+<script type="text/javascript">
+ /*热门关注*/
+        $('.friend_select div').each(function(index,element){
+            $(this).click(function(){
+                $(this).addClass('sel_act').siblings().removeClass('sel_act');
+                $('.sh').eq(index).show().siblings().hide();
+            })
+        })
+        $('.mores').click(function(){
+            $(this).hide();
+            $('.link_mores').show();
+        })
+</script>
+<script language="javascript" src="http://dkt.zoosnet.net/JS/LsJS.aspx?siteid=DKT98506049&float=1&lng=cn"></script>
+</body>
+</html>

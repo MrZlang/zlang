@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>Tag标签相关内容-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<meta name="description" content="{dede:global.cfg_description/}"/>
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link  href="{dede:global.cfg_templets_skin/}/style/layout.css" rel="stylesheet">
+<link  href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet">
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/comm.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jia-common.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<!--头部-->
+{dede:include filename="head2.htm"/}
+<!--内容-->
+<div class="taglist">
+ <!--面包屑-start-->
+ <div class="f_breads">
+    <div class="xq_sn">当前位置：<a href="{dede:global.cfg_cmsurl/}/" title="家具定制加盟">主页</a><span>></span><a href='tags.php' title="怡萧行招商加盟">tag标签</a></div>
+ </div>
+ <!--面包屑-end-->
+ <div class="taglist-left">
+ {dede:list pagesize='8' addfields='bes_style'}
+  <div class="taglist_left_1_1">
+	<a href="[field:arcurl/]" title="[field:fulltitle/]" title="全屋定制加盟"><img alt="全屋定制加盟,怡萧行,衣柜加盟" title="全屋定制加盟" src="[field:litpic/]" width="220" height="150" class="taglist_left_1_1_1">
+	</a>
+	<ul>
+		<li style="padding:10px 0 10px;"><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+		<li style="padding-top:10px;">
+		<span>[field:pubdate function="MyDate('m-d',@me)"/]</span>
+                <!--Tags商品标签-->
+                [field:id runphp='yes']
+                global $cfg_cmspath;
+                $tags = GetTags(@me);
+                $revalue = '';
+                $tags = explode(',', $tags);
+                foreach($tags as $key => $value){
+                            if($value){
+                                $revalue .= '<a href="'.$cfg_cmspath.'/tags.php?/'.$value.'/" title="整体衣柜加盟"><font class="taglist-1">'.$value.'</font></a> ';
+                   }
+                  }
+                @me = $revalue;
+                [/field:id]
+		</li>
+		<li style="font-size:13px;">&#160;&#160;&#160;&#160;&#160;[field:description function="cn_substr (Html2text(@me),80)"/]...</li>
+	</ul>
+  </div>
+  {/dede:list}
+  <div class="page_list" style="padding-top:30px;">
+   <ul>
+     {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="2"/}
+   </ul>
+  </div>
+ </div>
+ <div class="taglist-right">
+   <div class="taglist-groom">
+    <div class="play_right_title">
+	  <font>推荐内容</font>
+    </div>
+    <div class="taglist_right_con">
+			<p>
+        <img alt="衣柜移门加盟,怡萧行,橱柜代理" src="{dede:global.cfg_templets_skin/}/images/9_21tag.png" width="360" height="250" style="margin-bottom:20px;">
+                {dede:arclist row="3" typeid="24" titlelen="30" infolen="60"}
+				<a href="[field:arcurl/]" title="[field:fulltitle/]">
+		        [field:title/]
+				</a>
+				<font>&#160;&#160; [field:description function="cn_substr (Html2text(@me),45)"/]...</font>
+                {/dede:arclist}
+			</p>
+	</div>
+   </div>
+   <div class="taglist-groom">
+    <div class="play_right_title">
+	  <font>热点内容</font>
+    </div>
+    <div class="taglist_right_con">
+			<p>
+        <img alt="衣柜移门加盟,怡萧行,橱柜代理" src="{dede:global.cfg_templets_skin/}/images/9_20tag.png" width="360" height="250" style="margin-bottom:20px;">
+              {dede:arclist row="3" typeid="26" titlelen="30" infolen="60"}
+				<a href="[field:arcurl/]" title="[field:fulltitle/]" >
+		        [field:title/]
+				</a>
+				<font>&#160;&#160; [field:description function="cn_substr (Html2text(@me),45)"/]...</font>
+                {/dede:arclist}
+			</p>
+	</div>
+   </div>
+   <div class="taglist-groom">
+    <div class="play_right_title">
+	  <font>标签云</font>
+    </div>
+    <div class="taglist_right_1">
+			{dede:tag row='36' sort='month'}
+            <a href='[field:link/]' class='tagc[field:highlight /]' title="衣柜十大品牌厂商">[field:tag /]</a>
+            {/dede:tag}
+    </div>
+   </div>
+ </div>
+
+</div>
+<!--底部-->
+{dede:include filename="foot2.htm"/}
+</body></html>

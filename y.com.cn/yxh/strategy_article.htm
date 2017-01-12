@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>{dede:field.title /}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="author" content="怡萧行橱柜定制官网" />
+<meta name="copyright" content="怡萧行橱柜定制官网|www.yixiaohang.com.cn|版权所有" />
+<meta name="googlebot" content="index, follow" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/view.php?aid={dede:field.id/}">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/view.php?aid={dede:field.id/}">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/view.php?aid={dede:field.id/}";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/line.css"/>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/layout.css"/>
+<!-- 轮播JS -->
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/right-nav.js "></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/tel.js "></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/index.js "></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.SuperSlide.2.1.1.js "></script>
+<script src="{dede:global.cfg_templets_skin/}/js/case.js"></script>
+<script type="text/javascript"> <!-- document.oncontextmenu=function(e){return false;} // --></script>
+<style><!-- body { -moz-user-select:none; } --></style>
+</head>
+<body style="overflow: visible;background:#282828;" onselectstart="return false">
+<!-- 头部 -->
+<div id="wrap">
+    <div id="container">
+        <div class="section" id="section-1">
+            {dede:include filename="head2.htm"/}
+            <div class="one-top3">
+                    <div class="one-banner">
+                        <div class="clearfix">
+                            <div class="my-banner2" style="padding-top:125px;"><img src="{dede:global.cfg_templets_skin/}/images/img13.png"></div>
+                            <div id="section-2"></div>
+                            <div class="my-text">
+                                <span style="font-size:40px;">{dede:field.title/}</span>
+                                <font style="color:#999; font-size:20px;">CUSTOM STRATEGY</font>
+                            </div>
+                            <div class="news_time">
+                                <div class="news_t1">{dede:field.pubdate function="MyDate('d',@me)"/}</div>
+                                <div class="news_t2">{dede:field.pubdate function="MyDate('Y-m',@me)"/}</div>
+                            </div>
+                        </div>
+                        <!-- <a href="#section-3" class="top-ico3"></a> -->
+                    </div>
+            </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- content -->
+<div id="section-3"></div>
+<div class="section news_bj">
+    <div class="news_main clearfix">
+       <div class="my-text2 new_text new_content" style="color:#fff;">
+                            {dede:field.body/}
+                            <div id="section-4"></div>
+            <div class="nextcase">
+                 <p class="fl">{dede:prenext get='pre'/}</p>
+                 <p class="fr">{dede:prenext get='next'/}</p>
+            </div>
+       </div>
+    </div>
+</div>
+<!-- 底部-->
+{dede:include filename="foot2.htm"/}
+<ul id="nav" class="clearfix" style="display: block;">
+    <li class="">
+         <a href=" #section-1">顶部<em class="nav-ico fr"></em></a>
+    </li>
+    <li class="current">
+         <a href=" #section-2">标题<em class="nav-ico fr"></em></a>
+    </li>
+    <li>
+        <a href=" #section-3">文章<em class="nav-ico fr"></em></a>
+    </li>
+    <li>
+        <a href=" #section-4">更多<em class="nav-ico fr"></em></a>
+    </li>
+    <li>
+        <a href=" #page-work-foot">联系<em class="nav-ico fr"></em></a>
+    </li>
+</ul>
+{dede:include filename="sidebar.htm"/}
+</body>
+</html>

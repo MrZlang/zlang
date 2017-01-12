@@ -1,0 +1,32 @@
+<!-- 轮播图 -->
+  <div class="banner-wrap">
+    <div class="yxh-high">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <a href="#" title="" target="_blank" class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/banner_01.jpg"></a>
+          <a href="#" title="" target="_blank" class="swiper-slide" ><img src="{dede:global.cfg_templets_skin/}/images/banner_01.jpg"></a>
+          <a href="#" title="" target="_blank" class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/banner_01.jpg"></a>
+          <a href="#" title="" target="_blank" class="swiper-slide" ><img src="{dede:global.cfg_templets_skin/}/images/banner_01.jpg"></a>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination" style="bottom:30px;"></div>
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-button-next" style="margin-right:100px;"></div>
+        <div class="swiper-button-prev" style="margin-left:100px;"></div> -->
+      </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            // nextButton: '.swiper-button-next',
+            // prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            loop:true,
+            height: window.innerHeight,
+            autoplayDisableOnInteraction: false
+        });
+    </script>
+  </div>

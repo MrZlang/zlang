@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Brogrammer (SL).tmTheme",
+	"expand_tabs_on_save": false,
+	"font_face": "微软雅黑",
+	"font_size": 12,
+	"ignored_packages":
+	[
+	],
+	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"update_check": false,
+	"word_wrap": "true"
+}

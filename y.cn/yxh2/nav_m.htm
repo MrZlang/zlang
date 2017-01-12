@@ -1,0 +1,213 @@
+<div class="header_seek_nav" style="top: -100%;">
+	<div class="header_seek_nav_input">
+   		<a href="#"></a>
+            	<!-- <input type="text" name="keyword" class="text" placeholder="怡萧行橱柜">
+            	<input type="submit" class="submit" value=""> -->
+            	<form role="search" action="{dede:global.cfg_cmsurl/}/plus/search.php" name="aForm" >
+            		<input type="text" placeholder="怡萧行衣柜" name="q" value=""class="text">
+            		<input type="submit" class="submit" value="" onclick="return mark(aForm)">
+               <!--  <button type="submit" onclick="return mark(aForm)">
+                   <input  style="width: 24px;height: 24px;padding: 0 1px;"  type="image" src="assets/images/search.png" />
+               </button> -->
+            	</form>
+	</div>
+	<div class="header_seek_nav_com">
+		<h4>热门搜索</h4>
+		<ul>
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=定制家具">定制家具</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=全屋定制">全屋定制</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=衣柜定制">衣柜定制</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=榻榻米">榻榻米</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=阳台柜定制">阳台柜定制</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=儿童房定制">儿童房定制</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=定制风格">定制风格</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=定制攻略">定制攻略</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=环保家具">环保家具</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=卧室定制">卧室定制</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=客餐厅隔断">客餐厅隔断</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=家具收纳">家具收纳</a></li> 
+        	</ul>
+	</div>
+</div>
+<div class="header_more_com" style="top: -100%; display: none;">
+	<ul style="height: 627px;">
+		<li>
+            <a class="more_nav_sy" href="{dede:global.cfg_mobileurl/}/">
+                <span>首页</span>
+            </a>
+        </li>
+		<li>
+			<a class="more_nav_qw" href="{dede:global.cfg_mobileurl/}/list.php?tid=88">
+				<span>全屋</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_cf" href="{dede:global.cfg_mobileurl/}/list.php?tid=89">
+				<span>厨房</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_ws" href="{dede:global.cfg_mobileurl/}/list.php?tid=14">
+				<span>卧室</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_kct" href="{dede:global.cfg_mobileurl/}/list.php?tid=18">
+				<span>客厅</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_ct" href="{dede:global.cfg_mobileurl/}/list.php?tid=19">
+				<span>餐厅</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_yg" href="{dede:global.cfg_mobileurl/}/list.php?tid=23">
+				<span>衣柜</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_ttm" href="{dede:global.cfg_mobileurl/}/list.php?tid=24">
+				<span>榻榻米</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_smdz" href="{dede:global.cfg_mobileurl/}/list.php?tid=113">
+				<span>实木定制</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_etf" href="{dede:global.cfg_mobileurl/}/list.php?tid=16">
+				<span>儿童房</span>
+			</a>
+		</li>
+		<li>
+			<a class="more_nav_sf" href="{dede:global.cfg_mobileurl/}/list.php?tid=15">
+				<span>书房</span>
+			</a>
+		</li>
+        <li>
+                <a class="more_nav_hd" href="{dede:global.cfg_mobileurl/}/activityzone_m.html">
+                    <span>活动</span>
+                </a>
+        </li>
+        <li>
+                <a class="more_nav_sh" href="{dede:global.cfg_mobileurl/}/list.php?tid=11">
+                    <span>生活</span>
+                </a>
+        </li>
+        <li>
+                <a class="more_nav_sj" href="{dede:global.cfg_mobileurl/}/list.php?tid=2">
+                    <span>案例</span>
+                </a>
+        </li>
+        <li>
+                <a class="more_nav_zx" href="{dede:global.cfg_mobileurl/}/list.php?tid=11">
+                    <span>装修</span>
+                </a>
+        </li>
+        <li>
+                <a class="more_nav_fg" href="{dede:global.cfg_mobileurl/}/list.php?tid=10">
+                    <span>风格</span>
+                </a>
+        </li>
+	</ul>
+</div>
+<script type="text/javascript">
+$(function(){
+        $('.search_inp').focus(function() {
+    $('.header_seek_nav_input').find('.text').focus();
+    $(".header_seek_nav").show().animate({
+        top: '0'
+    }, 500, 'linear', function() {
+        $('body').eq(0).css({
+            height: $(window).height(),
+            overflow: 'hidden'
+        });
+        $(window).scroll(function() {
+            $(window).scrollTop(0)
+        })
+    })
+});
+$('.header_seek_nav_input a').click(function() {
+    $(".header_seek_nav").show().animate({
+        top: '-100%'
+    }, 500, 'linear', function() {
+        if ($('.header_more_com').offset().top != 40) {
+            $('body').eq(0).css({
+                height: 'auto',
+                overflow: 'auto'
+            });
+            $(window).unbind('scroll')
+        }
+    })
+});
+$(".header_more").on("click", function() {
+    if ($(".header_more_com").css('display') == 'none') {
+        $(this).addClass('on');
+        $(".header_more_com").show().animate({
+            top: '40px'
+        }, 500, 'linear', function() {
+            $(window).scroll(function() {
+                $(window).scrollTop(0)
+            })
+        });
+        $(".header_more_com ul").css({
+            height: document.documentElement.clientHeight - 40
+        });
+        $('body').eq(0).css({
+            height: $(window).height(),
+            overflow: 'hidden'
+        })
+    } else {
+        $(this).removeClass('on');
+        $(".header_more_com").show().animate({
+            top: '-100%'
+        }, 500, 'linear', function() {
+            $(this).hide();
+            $(window).unbind('scroll')
+        });
+        $('body').eq(0).css({
+            height: 'auto',
+            overflow: 'auto'
+        })
+    }
+});
+//搜索框功能完善
+function sub_mit(){
+    var reg = /彩票|足球|代理|欧洲|qq|www|新辉煌|开奖|阿彬狗|开奖|开什么|棋牌|游戏|加q|q群|香港|com|Com|net|QQ|md5|sleep|alert|\+|\*|‘|’|\/|\-|\#|\^|\!|\@|\%|\&|\~|\^|\[|\]|\.|\'|\"/;
+    var txt = $.trim($('.text').val());//获取输入搜索值并去掉首尾空格
+   if(reg.test(txt)||txt==""){
+        $('.text').val("怡萧行衣柜");
+    }
+/*    else{
+        txt = txt.replace(/\s+/g,"_");
+        window.location.href = "http://www.yixiaohang.com.cn/product_" + txt;
+    }*/
+}
+$('.submit').click(function(){
+    sub_mit();
+});
+document.onkeydown = function(e){
+    var keycode=document.all?event.keyCode:e.which;
+    if(keycode == 13){
+        sub_mit();
+    }
+}
+
+if($('.header_search input').val()!=''){
+    $('.header_search a').show();
+}
+$('.header_search input').bind("paste cut keydown keyup focus blur",function(){
+    if($(this).val()!=''){
+        $('.header_search a').show();
+    }else {
+        $('.header_search a').hide();
+    }
+});
+$('.header_search a').click(function(){
+    $(this).hide();
+    $('.header_search input').val('');
+});
+});
+</script>    

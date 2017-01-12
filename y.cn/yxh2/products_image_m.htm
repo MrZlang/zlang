@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{dede:field.title /}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.tags /}" />
+<meta name="description" content="{dede:field.pro_intro /}" />
+<meta charset="gb2312">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="icon" type="image/png" href="assets/i/favicon.png">
+<link rel="stylesheet" type="text/css" href="assets/css/common.css" >
+<link rel="stylesheet" type="text/css" href="assets/css/goods_base.css" >
+<link rel="stylesheet" href="assets/css/swiper.min.css">
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/mark.js"></script>
+</head>
+<body>
+<header class="header">
+  <a href="{dede:global.cfg_mobileurl/}/list.php?tid=1" class="fan">
+      <img src="assets/images/fan.png">
+    </a>
+  <h3>产品详情</h3>
+  <!--<a class="header_more" href=""></a>-->
+      <a class="header_more" href="javascript:;"></a>
+      <!--<a href="tel:4008841868" class="kf_phone"></a>-->
+</header>
+{dede:include filename="nav_m.htm"/}
+<!-- 轮播 -->
+<div style="-webkit-transform:translate3d(0,0,0);">
+	<!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            {dede:productimagelist}
+            <div class="swiper-slide"><img src="[field:imgsrc/]"></div>
+            {/dede:productimagelist}
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });
+    </script>
+</div>
+<!-- title -->
+<div class="mall-info">
+  <div class="mall-bt">{dede:field.title/}</div>
+  <div class="mall-may"><i>参考价：</i>{dede:field.pro_refe/}<i style="color:#f60;"> 元/㎡</i></div>
+  <div class="mall-ps"><i></i><span><img src="assets/images/good/like.png" title="全屋定制" alt="武汉全屋定制,怡萧行,全屋定制"><em>0</em></span></div>
+  <input type="hidden" id="goods_id" value="253"/>
+  <input type="hidden" id="click_likes" value="0"/>
+</div>
+<!-- quan -->
+<div class="quan">
+  <ul>
+    <li><img src="assets/images/good/01.png" title="家具定制" alt="武汉家具定制,怡萧行,家具定制"><i>正品保证</i></li>
+    <li><img src="assets/images/good/02.png" title="衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制"><i>EO级环保板材</i></li>
+    <li><img src="assets/images/good/03.png" title="橱柜定制" alt="武汉橱柜定制,怡萧行,橱柜定制"><i>健康环保</i></li>
+  </ul>
+</div>
+<div class="info-box">
+	<i>商品详情</i>
+	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_01.jpg" title="全屋定制" alt="武汉全屋定制,怡萧行,全屋定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_02.jpg" title="家具定制" alt="武汉家具定制,怡萧行,家具定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_03.jpg" title="衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_04.jpg" title="橱柜定制" alt="武汉橱柜定制,怡萧行,橱柜定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_05.jpg" title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保家具定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_06.jpg" title="武汉全屋定制" alt="武汉全屋定制,怡萧行,全屋定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_07.jpg" title="武汉家具定制" alt="武汉家具定制,怡萧行,家具定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_08.jpg" title="武汉衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_09.jpg" title="武汉橱柜定制" alt="武汉橱柜定制,怡萧行,橱柜定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_10.jpg" title="武汉环保定制" alt="武汉环保定制,怡萧行,环保家具定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_11.jpg" title="全屋订制" alt="武汉全屋订制,怡萧行,全屋订制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_12.jpg" title="定制家具" alt="武汉订制家具,怡萧行,定制家具">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_13.jpg" title="定制衣柜" alt="武汉订做衣柜,怡萧行,订做衣柜">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_14.jpg" title="定制全屋" alt="武汉订做全屋,怡萧行,定做全屋">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_15.jpg" title="定制橱柜" alt="武汉橱柜定做,怡萧行,橱柜订制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_16.jpg" title="环保家具定制" alt="武汉环保家具订制,怡萧行,环保家具定制">
+  	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_17.jpg" title="武汉环保家具定制" alt="武汉环保定制,怡萧行,环保定制">
+	{dede:productimagelist}
+     	 <img class="lazy" src="assets/images/grey.gif" data-original="[field:imgsrc/]" alt=""  style="margin:3px 0px;" />
+      	{/dede:productimagelist}
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_19.jpg" title="全屋定制" alt="武汉全屋定制,怡萧行,全屋定制">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_20.jpg" title="家具定做" alt="武汉家具定做,怡萧行,家具定做">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_21.jpg" title="订制衣柜" alt="武汉订制衣柜,怡萧行,订制衣柜">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_22.jpg" title="订做橱柜" alt="武汉订做橱柜,怡萧行,订做橱柜">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_23.jpg" title="全屋订做" alt="武汉全屋订做,怡萧行,全屋订做">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_24.jpg" title="订制家具" alt="武汉订制家具,怡萧行,订制家具">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_25.jpg" title="衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_26.jpg" title="橱柜定做" alt="武汉橱柜定做,怡萧行,橱柜定做">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_27.jpg" title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保家具定制">
+      	 <img class="lazy" src="assets/images/grey.gif" data-original="assets/images/products/product_28.jpg" title="武汉环保定制家具" alt="武汉环保定制家具,怡萧行,武汉环保定制家具">
+</div>
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post" class="form-main" name="tForm">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="6" />
+<input type="hidden" name="do" value="2" />
+    	<div class="ban"  id="bmk">
+        	<div class="ban_bt">10秒抢0元设计
+            	<div class="ban_bt_left"><i></i><span></span></div>
+            	<div class="ban_bt_right"><i></i><span></span></div>
+  	</div>
+	<div class="ban_box">
+		<div class="ban_txt">
+			<input name="m_details_name" type="text" id="m_details_name"  placeholder="请输入姓名" value=''>
+      		</div>
+		<div class="ban_txt">
+			<input maxlength="11" type="number"  name="m_details_phone" id="m_details_phone" placeholder="请输入手机号码">
+		</div>   
+             <div class="ban_txt">
+                   <input type='text' name='m_details_region' id='m_details_region'  placeholder="请输入小区地址" value=''/>
+             </div>         
+            <div class="ban_btn">
+			<input type="submit" name="submit" value="火热报名中"  onclick="return check(tForm)"/>	
+		</div>
+        </div>
+	</div>
+	<input type='hidden' name='m_details_area' id='m_details_area' value='手机端产品详情页表单' />
+	<input type='hidden' name='m_details_date' id='m_details_date' value='' />
+	<input type="hidden" name="dede_fields" value="m_details_name,text;m_details_phone,text;m_details_area,text;m_details_date,text;m_details_region,text" />
+    <input type="hidden" name="dede_fieldshash" value="7c55ef21705b27c07a9bcb4130ef73fb" />
+</form>
+<div class="list-bot">已经到底啦</div>
+<div class="ge"></div>
+<div class="fixed">
+	<a href="tel:4000-868-863" target="_blank" ><img src="assets/images/02.png">电话咨询</a>
+	<a rel="nofollow" href="#bmk" style="background:#ea4848;"><img src="assets/images/01.png">预约报名</a>	
+</div>
+<!-- right -->
+<div class="right">
+  <!-- <a href="/online/"  class="pcleyu"><img src="assets/images/kefu.png"></a> -->
+    <a href="#" style="display:none;"><img src="assets/images/top.png"></a>
+</div>
+<script language="javascript" src="http://dkt.zoosnet.net/JS/LsJS.aspx?siteid=DKT98506049&float=1&lng=cn"></script>
+<script type="text/javascript" src="assets/js/jquery.lazyload.js"></script>
+<script type="text/javascript"> 
+      $(function() {
+      $("img.lazy").lazyload({
+      		placeholder : "assets/images/grey.gif", 
+          		effect: "fadeIn",
+          		threshold : 200
+      	});
+  	});
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link  href="{dede:global.cfg_templets_skin/}/style/layout.css" rel="stylesheet">
+<link  href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet">
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-function.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-main.js"></script>
+
+</head>
+<body>
+<!--头部-->
+{dede:include filename="head.htm"/}
+<!--内容-->
+<div class="block">
+ <div id="ur_here">
+   {dede:field name='position'/}
+ </div>
+ </div>
+ <div class="block">
+	{dede:include filename="bespoke_left.htm"/}
+    <div class="AreaR">
+    <h3 class="a_title"><span>文章列表</span>
+    </h3>
+     <div class="boxCenterList">
+     {dede:list pagesize='5'}
+        <div class="art_list_con">
+		<a href="[field:arcurl/]"  class="f6" title="环保定制攻略"><img alt="环保定制攻略,怡萧行,武汉橱柜定制" title="环保定制攻略" src="[field:litpic/]" class="f_l" width="190" height="120"></a>
+        <ul>
+            <li>
+            <a href="[field:arcurl/]"  class="f6" title="环保定制攻略">[field:title/]<span style="float: right;">[field:pubdate function="MyDate('m-d',@me)"/]</span></a></li>
+          <li style="color:#aaa;">
+          <!--Tags商品标签-->
+                        [field:id runphp='yes']
+                        global $cfg_cmspath;
+                        $tags = GetTags(@me);
+                        $revalue = '';
+                        $tags = explode(',', $tags);
+                        foreach($tags as $key => $value){
+                                    if($value){
+                                        $revalue .= '<a href="'.$cfg_cmspath.'/tags.php?/'.$value.'/" title="买家具去哪个网站好"><font class="taglist-1">'.$value.'</font></a> ';
+                           }
+                          }
+                        @me = $revalue;
+                        [/field:id]
+        	</li>
+        	<li>&nbsp;&nbsp;[field:description function="cn_substr (Html2text(@me),90)"/]...</li>
+		</ul>
+        </div>
+     {/dede:list}
+    </div>
+   </div>
+   </div>
+   <div class="page_list">
+<ul>
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+</ul>
+</div>
+
+</div>
+
+<!--底部-->
+{dede:include filename="foot2.htm"/}
+</body></html>

@@ -1,0 +1,65 @@
+<div class="head-wrap">
+    <div class="head-search">
+            <div class="search-box">
+              <form action="{dede:global.cfg_cmsurl/}/plus/search.php" method="post">
+          <input type="hidden" name="mid" value="1" />
+          <input type="hidden" name="dopost" value="search" />
+              <input type="text" name="q" value="" placeholder="如:实木定制" class="fl search-input" />
+              <input type="submit" name="submit" value='搜索' class="search-submit" />
+              </form>
+              <a class="close"></a>
+            </div>
+        </div>
+    <!-- 导航 -->
+    <div class="yxh-head">
+      <a href="#" class="h-logo"></a>
+      <ul class="h-nav">
+        <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='nav-gb current'":@me="";{/dede:field}> 
+          	<a href='{dede:global.cfg_cmsurl/}/'>首页</a>
+        </li>
+        {dede:channel type='top' row='10' currentstyle="<li class='nav-gb current'><a href='~typelink~' ~rel~>~typename~</a></li>"}
+        <li  class="nav-gb"><a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+      <div class="nav-tool">
+        <a class="nav-t-kefu" target="_blank" href="#" >
+          <b class="v-gb-ico"></b>
+          <em class="nav-t-kefu-pop">小V在线客服</em>
+        </a>
+        <a class="nav-t-search" href="#" href="javascript:void(0)">
+          <b class="v-gb-ico"></b>
+        </a
+        <a class="nav-t-user" href="#"><b class="v-gb-ico"></b></a>
+      </div>
+    </div>
+  </div>
+  <div class="menu-series">
+    <div class="vms-bigbox">
+      <div class="vms-box cl">
+        <dl>
+		<dt><a class="v-gb-ico" href="{dede:global.cfg_basehost/}/function/">功能</a></dt>
+		{dede:channel     row='30'  typeid ='2'     type ='son' }
+		<dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+		{/dede:channel}
+        </dl>
+        <dl>
+		<dt><a class="v-gb-ico" href="{dede:global.cfg_basehost/}/space/">空间</a></dt>
+    		{dede:channel     row='30'  typeid ='3'     type ='son' }
+		<dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+		{/dede:channel}
+        </dl>
+        <dl>
+		<dt><a class="v-gb-ico" href="{dede:global.cfg_basehost/}/style/">风格</a></dt>
+		{dede:channel     row='30'  typeid ='4'     type ='son' }
+		<dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+		{/dede:channel}
+        </dl>
+        <dl>
+		<dt><a class="v-gb-ico" href="{dede:global.cfg_basehost/}/color/">颜色</a></dt>
+		{dede:channel     row='30'  typeid ='5'     type ='son' }
+		<dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+		{/dede:channel}
+        </dl>       
+      </div>
+    </div>
+  </div>

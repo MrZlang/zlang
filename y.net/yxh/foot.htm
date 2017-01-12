@@ -1,0 +1,118 @@
+<!-- foot -->
+<div id="yxh-foot-wrap">
+    <div id="yxh-foot">
+        <div class="yxh-f-logo"><img src="{dede:global.cfg_templets_skin/}/images/f-logo.jpg" width="125" height="50" /></div>
+        <div class="yxh-f-share">
+              <div class="vf-share-link">
+      <a class="vf-f-sina" href="#" target="_blank"><b class="v-gb-ico"></b></a>
+      <a class="vf-f-weixin" href="#"><b class="v-gb-ico"></b></a>
+      <a class="vf-f-vi" href="#" target="_blank"><b class="v-gb-ico"></b></a>
+      <a class="vf-f-tieba" href="#" target="_blank"><b class="v-gb-ico"></b></a>
+      <a class="vf-f-buluo" href="#" target="_blank"><b class="v-gb-ico"></b></a>
+      <a class="vf-f-kefu" href="#" target="_blank"><b class="v-gb-ico"></b>小V在线客服</a>
+              </div>
+              <div class="weixin-overbox v-gb-ico"><img src="{dede:global.cfg_templets_skin/}/images/weixin-overbox-ico.jpg" width="100" height="100"></div>
+        </div>
+        <div class="vf-f-sitelinks">
+        	{dede:channel row='30' type ='top' }
+            <a href='[field:typelink/]'  target="_blank">[field:typename/]</a>
+       	{/dede:channel}
+        </div>
+        <div class="vf-f-copyright">
+              <p>COPYRIGHT © 1996-2016 <br>ALL RIGHTS RESERVED. <a href="#" target="_blank">粤ICP备05100288号</a></p>
+        </div>
+      </div>
+</div>
+<div class="widget-container">
+	<ul>
+		<li class="serve"><em></em></li>
+		<li class="scale"><em></em></li>
+		<li class="process"><em></em></li>
+	</ul>
+</div>
+<div class="feedback-pop-container">
+	<div class="mask"></div>
+	<div class="content clearfix">
+		<!-- <div class="left-dom">
+			<div class="logo"></div>
+			<p class="thanks">感谢您向我们提出宝贵意见</p>
+			<p class="hint">为了给您呈现更好的用户体验，您在使用中遇到的任何问题或者好的建议，都要告诉小尼哦~</p>
+			<p class="secret">每一分关注都会带来成长（注：怡萧行将对您的联系方式严格保密）</p>
+		</div> -->
+		<div class="right-dom">
+			<h4 class="know-more">立即预约 免费定制</h4>
+			<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+			<input type="hidden" name="action" value="post" />
+			<input type="hidden" name="diyid" value="1" />
+			<input type="hidden" name="do" value="2" />
+			<div class="input-number-container">
+				<input type="text" class="input-number input-normal" placeholder="请输入您的姓名" name='ordername' id='ordername'/>
+			</div>
+			<div class="input-number-container">
+				<input type="text" class="input-number input-normal" placeholder="请输入您的手机号" name='orderphone' id='orderphone'/>
+			</div>
+			<!-- <div class="tolerance">验证码错误，请重新输入</div> -->
+	 		<input type="submit" name="submit" type="submit" value="提 交" class="confirm-btn disabled" />
+	 		<div class="xorder-name">请输入您的姓名！</div>
+	 		<div class="xorder-phone">请输入您的手机号！</div>
+	 		<div class="xorder-phone-2">请输入正确的手机号！</div>
+	 		<input type='hidden' name='orderarea' id='orderarea' value='侧栏预约测量' />
+			<input type='hidden' name='orderdate' id='orderdate' value='' />
+			<input type="hidden" name="dede_fields" value="ordername,text;orderphone,text;orderarea,text;orderdate,text" />
+			<input type="hidden" name="dede_fieldshash" value="ba633178c96f37a9dda9eba30eea0b2a" />
+			</form>
+		</div>
+		<button class="hidebtn"></button>
+	</div>
+</div>
+<div class="bottom_slide_box" style="left: 0px; bottom: -71px;">
+	<!-- 以下是隐藏点击层 -->
+	<div class="bottom_slide_content">
+		<!-- 关闭按钮不显示 (功能正常)-->
+		<!-- <div class="bottom_slide_close">
+	</div>
+	 -->
+	<div class="bottom_slide_click">
+	</div>
+	<div class="slide_box_shade">
+	</div>
+	<div class="bottom_details">
+		<div class="all_Calc_Container Calc_Container_yxh">
+			<div class="bottom_slide_img">
+			</div>
+			<div class="bottom_slide_down bottom_slide_up" style="top: -42px;">
+			</div>
+			<div class="bottom_bm">
+				<div class="bottom_bm_text"></div>
+					<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+					<input type="hidden" name="action" value="post" />
+					<input type="hidden" name="diyid" value="3" />
+					<input type="hidden" name="do" value="2" />
+					<dl>
+					<dt>
+						<input type='text' name='botname' id='botname' class="text" placeholder="请输入您的姓名" value='' />
+					</dt>
+					<dt>
+						<input type='text' name='botphone' id='botphone' class="text" placeholder="请输入您的手机号码"  value='' />
+					</dt>
+					<dd><input type="submit" name="submit" value="免费申请" class="btn_sub_apply btn"></dd>
+					</dl>
+					<input type='hidden' name='botarea' id='botarea' value='底部表单' />
+					<input type='hidden' name='botdate' id='botdate' value='' />
+					<input type="hidden" name="dede_fields" value="botname,text;botphone,text;botarea,text;botdate,text" />
+					<input type="hidden" name="dede_fieldshash" value="9f63ed7aaefb67f1503a70a2fcf0338f" />
+					</form>
+				<div class="bottom_price">
+					<strong>省时、省心、省力</strong>
+				   	<p>已有<span>199485</span>人报名</p>
+				</div>
+				<div class="bottom_weixin">
+					怡萧行<br/>微信二维码
+				</div>
+				<div id="bottomname">请输入您的姓名！</div>
+				<div id="bottomphone">请输入您的手机号！</div>
+				<div  id="bottomphone2">请输入正确的手机号！</div>
+			</div>
+		</div>
+	</div>
+</div>

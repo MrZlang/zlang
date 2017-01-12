@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.title /}-怡萧行全屋定制官方商城</title>
+<meta name="keywords" content="{dede:field.tags /}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/view.php?aid={dede:field.id/}">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/view.php?aid={dede:field.id/}">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/view.php?aid={dede:field.id/}";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link  href="{dede:global.cfg_templets_skin/}/style/layout.css" rel="stylesheet">
+<link  href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet">
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-function.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-main.js"></script>
+</head>
+<body>
+<!--头部-->
+{dede:include filename="head.htm"/} 
+<!--内容-->
+<div class="block">
+	<div id="ur_here">
+    当前位置：<a href="{dede:global.cfg_basehost/}" title="衣柜定制攻略,怡萧行,武汉家具定制">首 页</a><code>></code> 定制攻略
+	</div>
+</div>
+<div class="block">
+{dede:include filename="bespoke_left.htm"/} 
+	<div class="AreaR">
+		<div class="article_right">
+            
+			<h3 class="art_right_title">
+            	{dede:field.title/}
+			<p>
+				<span>发表时间：{dede:field.pubdate function="MyDate('Y-m-d H:i:s',@me)"/}</span>
+				<span>编辑：{dede:field.writer/}&nbsp;</span>
+				<font>点击：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>
+   次</font>
+			</p>
+			</h3>
+			<div class="article_text">
+			{dede:field.body/}	
+			</div>
+            
+		</div>
+	</div>
+</div>
+
+<!--底部-->
+{dede:include filename="foot2.htm"/}
+</body></html>

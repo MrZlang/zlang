@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<meta name="description" content="{dede:global.cfg_description/}"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/jquery.tosrus.all.css">
+<link href="{dede:global.cfg_templets_skin/}/style/common.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/base.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/media.css" rel="stylesheet" type="text/css">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/main.js" type="text/javascript"></script>
+</head>
+<body class="pro-page">
+<div class="wrap">
+	{dede:include filename="head.htm"/}
+	<!-- 主体内容 -->
+	<div class="contain customa_main">
+		<div class="v-crumbs">
+    			{dede:field name='position'/} 
+        	</div>
+		<div id="showCent">
+			<div class="case_new_list">
+				<div class="case_new_details w_1200">
+					<!--左边详情内容-->
+					<div class="case_divfl fl">
+						<h1>{dede:field.title/}</h1>
+						<div class="picLunbo">
+							<ul class="ullit">
+								{dede:productimagelist}
+								<li>
+								<a href="[field:imgsrc/]" title="">
+								<img src="[field:imgsrc/]" alt="" title=""/>
+								<p>
+								[field:body/]...
+								</p>
+								<p class="blow_up" style="display: block;">
+									<span class="mask"></span><span class="txt">点击图片放大</span>
+								</p>
+								</a>
+								</li>
+								{/dede:productimagelist}
+							</ul>
+						</div>
+            				<div class="caseTabbg"></div>
+				            <div class="info">
+				                <p class="h1"><i>●</i>风格简介</p>
+				                <p class="txt">{dede:field.pro_intro/}</p>
+				            </div>
+				            <div class="line"></div>
+				            <div class="related">
+							<div class="icon_tab">
+								<div class="w_1200">
+									<div class="fl"><i></i>相关推荐</div>
+								</div>
+							</div>
+        						<ul class="related_des">
+                                                <li>
+                                                	<a href="#" target="_blank">
+                            						<img src="http://webimg-handle.liweijia.com/liweijia/upload/commodity/8886b63801f6e9050487809f24182b29.jpg@180h_250w_1e_1c" alt="詹姆士妆台/妆凳 组合" title="詹姆士妆台/妆凳 组合"/>
+                            						<div class="mask"></div>
+										<div class="txt clear">
+											<p class="fl"></p>
+											<p class="fr">￥2398
+											<br/><span>市场价￥3357.2</span></p>
+										</div>
+                        					</a>
+                    					</li>
+                                               	<li class="middle">
+                                        			<a href="#" target="_blank">
+                                        				<img src="http://webimg-handle.liweijia.com/liweijia/upload/commodity/4ee844c4705a58ba3a4cd1f62ca2990b.jpg@180h_250w_1e_1c" alt="优宝家小件换鞋凳 白色" title="优宝家小件换鞋凳 白色"/>
+										<div class="mask"></div>
+										<div class="txt clear">
+											<p class="fl"></p>
+											<p class="fr">￥410
+											<br/><span>市场价￥574</span></p>
+										</div>
+                        					</a>
+                    					</li>
+                                                <li>
+                                                	<a href="#" target="_blank">
+                            						<img src="http://webimg-handle.liweijia.com/liweijia/upload/commodity/864173483a83fd6ee2c9e0ffe7782b82.jpg@180h_250w_1e_1c" alt="后现代餐椅 有座包 原木色（白蜡木）" title="后现代餐椅 有座包 原木色（白蜡木）"/>
+										<div class="mask"></div>
+										<div class="txt clear">
+											<p class="fl"></p>
+											<p class="fr">￥699
+											<br/><span>市场价￥978.6</span></p>
+										</div>
+                        					</a>
+                    					</li>
+        						</ul>
+    						</div>
+            				<div class="line"></div>
+        				</div>
+        				<!--右边侧栏-->
+        				<div class="case_divfr fr">
+            				<div class="side_des">
+        						<h3 class="title"><i class="bar"></i>相关商品</h3>
+        						<div class="line"></div>
+							<div class="side_lunbo">
+								<ul class="lunbo_cont ullit">
+									<li class="on">
+										<a target="_blank" href="#">
+											<img src="{dede:global.cfg_templets_skin/}/images/custom_06.jpg" alt="" title="">
+										</a>
+										<p class="shoping" style="font-size:14px">温莎公爵
+											<span>¥12099</span>
+										</p>
+										<a class="reg" onclick="Reg.Regin('欧式浪漫主义 | 温莎公爵橱柜（一）');" href="#">
+											<em class="icon_button3">立即预约定制</em>
+										</a>
+									</li>
+									<div class="ov_h"></div>
+								</ul>
+							</div>
+							<div class="line"></div>
+						</div>
+				            <div class="side_des">
+				                <h3 class="title"><i class="bar"></i>热门秀家</h3>
+				                <ul class="side_list">
+								<li>
+				                            <a href="#">
+				                                <img src="http://webimg-handle.liweijia.com/liweijia/upload/case/b49dbe860990e8d19d33f073af6aafb6.jpg@180h_250w_1e_1c" alt="" title="">
+				                                <div class="mask"></div>
+				                                <div class="txt">没有什么能够阻挡，你对实木的向往</div>
+				                            </a>
+				                        </li>
+								<li>
+				                            <a href="#">
+				                                <img src="http://webimg-handle.liweijia.com/liweijia/upload/case/79fc5d05186a88378c999c7e451325c3.jpg@180h_250w_1e_1c" alt="" title="">
+				                                <div class="mask"></div>
+				                                <div class="txt">指尖摩挲传来的新生活热情</div>
+				                            </a>
+				                        </li>
+								<li>
+				                            <a href="#">
+				                                <img src="http://webimg-handle.liweijia.com/liweijia/upload/case/b91a2ac2d658077868eed37eb533b1b1.jpg@180h_250w_1e_1c" alt="" title="">
+				                                <div class="mask"></div>
+				                                <div class="txt">品好酒享人生，你需要这样的定制酒柜（一）</div>
+				                            </a>
+				                        </li>
+							</ul>
+						</div>
+        				</div>
+        				<div class="ov_h"></div>
+    				</div>
+			</div>       
+		</div>
+	</div>
+	<!-- foot -->
+	{dede:include filename="foot.htm"/}
+</div>
+<script type="text/javascript" language="javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.tosrus.min.all.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function () {
+        	$('.picLunbo a').tosrus({
+        		pagination: {
+                                    add: true
+                                }
+        	});
+          $(".picLunbo ul").tosrus({
+          	         infinite : true,
+			   autoplay : {
+			      play : true,
+			      pauseOnHover : true
+			   },
+			   slides : {
+			      scale : "fill"
+			   },
+			   buttons : true,
+			   pagination : {
+			      add : true
+			   }
+			});
+});
+</script>
+</body>
+</html>

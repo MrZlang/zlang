@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="author" content="怡萧行橱柜定制官网" />
+<meta name="copyright" content="怡萧行橱柜定制官网|www.yixiaohang.com.cn|版权所有" />
+<meta name="googlebot" content="index, follow" />
+<meta name="robots" content="index, follow" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+<meta name="screen-orientation" content="portrait">
+<meta name="format-detection" content="email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="icon" type="image/png" href="{dede:global.cfg_mobileurl/}/assets/i/favicon.png">
+<link rel="stylesheet" href="{dede:global.cfg_mobileurl/}/assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_mobileurl/}/assets/css/base.css" >
+<script src="{dede:global.cfg_mobileurl/}/assets/js/jquery.js"></script>
+<script src="{dede:global.cfg_mobileurl/}/assets/js/index.js"></script>
+<script src="{dede:global.cfg_mobileurl/}/assets/js/mark.js"></script>
+</head>
+<body>
+<header class="header">
+	<a href="{dede:global.cfg_mobileurl/}/" class="fan">
+  		<img src="{dede:global.cfg_mobileurl/}/assets/images/fan.png">
+  	</a>
+ 	<div class="header_search">
+		<form>
+			<input type="text" name="keyword" class="search_inp" placeholder="怡萧行橱柜">
+		</form>
+	</div>
+	<!--<a class="header_more" href=""></a>-->
+      <a class="header_more" href="javascript:;"></a>
+      <!--<a href="tel:4008841868" class="kf_phone"></a>-->
+</header>
+{dede:include filename="nav_m.htm"/}
+<!-- 分类 -->
+<div class="house_info">
+    <section class="info_tit">
+        <nav>
+            <a href="{dede:global.cfg_mobileurl/}/list.php?tid=9">
+                <img src="{dede:global.cfg_mobileurl/}/assets/images/tit_1.png">
+            </a>
+            <a href="{dede:global.cfg_mobileurl/}/list.php?tid=19">
+                <img src="{dede:global.cfg_mobileurl/}/assets/images/tit_2.png">
+            </a>
+            <a href="{dede:global.cfg_mobileurl/}/list.php?tid=28">
+                <img src="{dede:global.cfg_mobileurl/}/assets/images/tit_3.png">
+            </a>
+            <a href="{dede:global.cfg_mobileurl/}/list.php?tid=12">
+                <img src="{dede:global.cfg_mobileurl/}/assets/images/tit_4.png">
+            </a>
+            <a href="{dede:global.cfg_mobileurl/}/list.php?tid=9">
+                <img src="{dede:global.cfg_mobileurl/}/assets/images/tit_5.png">
+            </a>
+            <a href="{dede:global.cfg_mobileurl/}/list.php?tid=13">
+                <img src="{dede:global.cfg_mobileurl/}/assets/images/tit_6.png">
+            </a>
+        </nav>
+    </section>
+</div>
+<div class="bbs-li">
+	<ul id="load" style="display:block">
+		{dede:arclist flag='a' row='2' orderby='pubdate' }
+		<li>
+			<a class="bbs-bts" href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]">[field:title/]</a>
+			<div class="bbs-ps">
+				<i>[field:pubdate function="GetDateTimeMK(@me)"/]</i>
+				<em>
+					<img src="[field:global name=cfg_mobileurl /]/assets/images/t.png">
+					<p>[field:click/]</p>
+				</em>
+			</div>
+			<div class="bbs-i i3">官</div>
+		</li>
+		{/dede:arclist}
+		{dede:arclist flag='c' row='2' orderby='pubdate' }
+		<li>
+			<a class="bbs-bts" href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]">[field:title/]</a>
+			<div class="bbs-ps">
+				<i>[field:pubdate function="GetDateTimeMK(@me)"/]</i>
+				<em>
+					<img src="[field:global name=cfg_mobileurl /]/assets/images/t.png">
+					<p>[field:click/]</p>
+				</em>
+			</div>
+			<div class="bbs-i i1">置</div>
+		</li>
+		{/dede:arclist}
+		{dede:arclist flag='p' row='2' orderby='pubdate' }
+		<li>
+			<a class="bbs-bts" href="[field:arcurl/]">[field:title/]</a>
+			<div class="bbs-ps">
+				<i>[field:pubdate function="GetDateTimeMK(@me)"/]</i>
+				<em>
+					<img src="[field:global name=cfg_mobileurl /]/assets/images/t.png">
+					<p>[field:click/]</p>
+				</em>
+			</div>
+			<div class="bbs-i i2">精</div>
+		</li>
+		{/dede:arclist}
+		{dede:list pagesize='10'}
+		<li>
+			<a class="bbs-bts" href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]">[field:title/]..</a>
+			<div class="bbs-ps">
+				<i>[field:pubdate function="GetDateTimeMK(@me)"/]</i>
+				<em>
+					<img src="[field:global name=cfg_mobileurl /]/assets/images/t.png">
+					<p>[field:click/] </p>
+				</em>
+			</div>
+		</li>
+		{/dede:list}
+	</ul>
+	<div class="tab_foot">
+		<div class="bbs-page">
+			{dede:pagelist listitem="index,end,pre,next,option" listsize="1"/}
+		</div>
+	</div>
+	<div class="bbs-search">
+		<div class="bbs"></div>
+		<form role="search" action="{dede:global.cfg_cmsurl/}/plus/search.php" name="aForm" >
+			<input type="text" placeholder="版内搜索" name="q" value="" id="q">
+			<button type="submit" onclick="return mark()">
+	     			<img src="{dede:global.cfg_mobileurl/}/assets/images/searchs.png" >
+	     		</button>
+	     		<script type="text/javascript">
+			function mark() {
+				var q=document.getElementById('q').value;
+				var p=q.length;
+				if(q==0) {
+				            alert("请输入搜索内容!");
+				            return false;
+				}
+				if(p<2) {
+				            alert("请输入至少两个字符!");
+				            return false;
+				}
+			     	return true;
+			}
+			</script>
+     		</form>
+	</div>
+</div>
+<div class="bottom2">
+  <div class="bottom-rec">
+    <section class="bottom-rec-new one">
+      <div class="new-title">热点内容</div>
+      <ul class="new-title-list">
+        {dede:arclist row='5' orderby='hot' titlelen=35}
+        <li>
+          <a href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]">
+            <span class="left">[field:title/]...</span>
+            <span class="right2">[field:pubdate function='strftime("%m-%d",@me)'/]</span>
+          </a>
+        </li>
+        {/dede:arclist}
+      </ul>
+    </section>
+  </div>
+</div>
+<div class="bottom">
+  <div class="bottom-bot">怡萧行全屋定制官方商城<br>鄂ICP备16004930号</div>
+</div>
+<!-- online -->
+<div class="ge"></div>
+<div class="footer_consule">
+   	<div class="bg"></div>
+  	<div class="cs_designer">
+            <a href="tel:4000-868-863" target="_blank">电话咨询</a>
+            <a class="alert_popup_apply pcleyu" >申请免费设计</a>
+   	</div>
+</div>
+<!-- 弹出表单 -->
+<div class="show">
+	<h1 class="lean">0元设计全屋家具</h1>
+	<div class="close"><img src="{dede:global.cfg_mobileurl/}/assets/images/close.png"></div>
+	<form action="/plus/diy.php" enctype="multipart/form-data" method="post" class="form-main" name="tForm">
+		<input type="hidden" name="action" value="post" />
+		<input type="hidden" name="diyid" value="6" />
+		<input type="hidden" name="do" value="2" />
+	    	<div class="ban"  id="bmk">
+			<div class="ban_box">
+				<div class="ban_txt">
+					<input name="m_details_name" type="text" id="m_details_name"  placeholder="请输入姓名" value=''>
+		      		</div>
+				<div class="ban_txt">
+					<input maxlength="11" type="number"  name="m_details_phone" id="m_details_phone" placeholder="请输入手机号码">
+				</div>
+				<div class="ban_txt">
+					<input type='text' name='m_details_region' id='m_details_region'  placeholder="请输入小区地址" value=''/>
+				</div> 
+		            <div class="ban_btn">
+					<input type="submit" name="submit" value="火热报名中"  onclick="return check(tForm)"/>
+				</div>
+		      	</div>
+		</div>
+		<input type='hidden' name='m_details_area' id='m_details_area' value='最新动态底部预约报名' />
+		<input type='hidden' name='m_details_date' id='m_details_date' value='' />
+		<input type="hidden" name="dede_fields" value="m_details_name,text;m_details_phone,text;m_details_area,text;m_details_date,text;m_details_region,text" />
+		<input type="hidden" name="dede_fieldshash" value="c6b085a61c0add7ba48b850f80e35b4b" />
+	</form>
+</div>
+<div class="show-mask"></div>
+<!-- right -->
+<div class="right">
+  <!-- <a href="/online/"  class="pcleyu"><img src="{dede:global.cfg_mobileurl/}/assets/images/kefu.png"></a> -->
+    <a href="#" style="display:none;"><img src="{dede:global.cfg_mobileurl/}/assets/images/top.png"></a>
+</div>
+<script language="javascript" src="http://dkt.zoosnet.net/JS/LsJS.aspx?siteid=DKT98506049&float=1&lng=cn"></script>
+</body>
+</html>

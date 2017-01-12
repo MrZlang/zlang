@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>全屋家具定制_免费上门量房设计</title>
+<meta charset="utf-8">
+<meta name="keywords" content="免费上门量房设计、整体家具方案定制、整体家具、家具订做、家具定做、">
+<meta name="Description" content="在线免费预约上门量房设计定制全屋家具，免费出三维家具配套效果图，购买省钱40%以上。">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="怡萧行橱柜定制官网" />
+<meta name="copyright" content="怡萧行橱柜定制官网|www.yixiaohang.com.cn|版权所有" />
+<meta name="googlebot" content="index, follow" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="style/freedesign.css">
+<script type="text/javascript" src="js/freedesign/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/freedesign/index.js"></script>
+<script src="js/freedesign/zt_v2_bottom_bm.js"></script> 
+</head>
+<body>
+<body>
+    <ul class="dot_nav">
+        <li class="current"></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="content">
+       <!--  第一屏 -->
+        <div id="page1" class="com_page" style="height: 693px;">
+            <div class="wrap">
+                <div class="ti">
+                    <img src="images/freedesign/p1t.png" height="78" width="560" alt="">
+                </div>
+                <div class="page_img">
+                    <img src="images/freedesign/p1_1.png" class="touxiang1" height="81" width="81" alt="" style="display: block;">
+                    <img src="images/freedesign/p1_2.png" class="touxiang2" height="96" width="96" alt="" style="display: block;">
+                    <img src="images/freedesign/p1_11.png" class="touxiang3" height="53" width="53" alt="" style="display: block;">
+                    <img src="images/freedesign/p1_3.png" class="touxiang4" height="115" width="115" alt="" style="display: block;">
+                    <img src="images/freedesign/p1_5.png" class="touxiang5" height="53" width="53" alt="" style="display: block;">
+                    <img src="images/freedesign/p1_4.png" class="touxiang6" height="76" width="76" alt="" style="display: block;">
+                    <img src="images/freedesign/p1_6.png" class="touxiang7" height="84" width="85" alt="" style="display: block;">
+                    <img src="images/freedesign/diannao.png" class="diannao" height="244" width="370" alt="" style="top: 226px; opacity: 1;">
+                    <img src="images/freedesign/cup.png" class="cup" height="122" width="142" alt="" style="top: 410px; opacity: 1;">
+                    <img src="images/freedesign/mousekey.png" class="mousekey" height="126" width="301" alt="" style="left: 274px; opacity: 1;">
+                    <img src="images/freedesign/pad.png" class="pad" height="175" width="188" alt="" style="left: 160px; opacity: 1;">
+
+                </div>
+                <div class="clock">
+                    <canvas id="canvas" width="73" height="71"></canvas>
+                    <canvas id="p_canvas" width="73" height="71"></canvas>
+                </div>
+                <div class="js_box">
+        <script type="text/javascript">
+        //canvas时钟
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        var p_canvas = document.getElementById('p_canvas');
+        var p_context = p_canvas.getContext('2d');
+        var width=73,height=71; 
+
+        angle = 0,radius = width/2 - 4;
+        context.textBaseline = 'middle';
+        context.textAlign = 'center';
+        context.lineWidth = 2;
+ 
+        function Pointer(){
+        var p_type = [['#c5d1d7',30,2],['#64798b',25,3],['#64798b',20,3]];
+        function drwePointer(type,angle){
+        type = p_type[type];
+        angle = angle*Math.PI*2 - 90/180*Math.PI;
+        var length= type[1];
+        p_context.beginPath();
+        p_context.lineWidth = type[1];
+        p_context.lineWidth = type[2];
+        p_context.lineWidth = type[3];
+        p_context.strokeStyle = type[0];
+        p_context.moveTo(width/2,height/2);
+        p_context.lineTo(width/2 + length*Math.cos(angle),height/2 + length*Math.sin(angle));
+        p_context.stroke();
+        p_context.closePath();
+        
+        }
+        setInterval(function (){
+        p_context.clearRect(0,0,height,width);
+        var time = new Date();
+        var h = time.getHours();
+        var m = time.getMinutes();
+        var s = time.getSeconds();
+        h = h>12?h-12:h;
+        h = h+m/60;
+        h=h/12;
+        m=m/60;
+        s=s/60;
+        drwePointer(0,s);
+        drwePointer(1,m);
+        drwePointer(2,h);
+        },500);
+        }
+        var p = new Pointer();
+        
+        </script>
+        </div>
+        <!--[if lt IE 9]><style type="text/css">
+        .clock{ background:url(images/col2.png) ;}
+        </style>
+        <![endif]-->                               
+            </div>
+            <a href=" #page2" class="next"></a>
+        </div>
+        <!-- 第二屏 -->
+        <div id="page2" class="com_page" style="height: 693px;">
+            <div class="wrap">
+                <div class="ti">
+                    <img src="images/freedesign/p2_ti.png" height="78" width="933" alt="">
+                </div>
+                <div class="p2_img">
+                    <div class="disigner" style="left: 75px; width: 600px;">
+                        <img src="images/freedesign/ren.png" height="350" width="432" alt="">
+                    </div>
+                    <div class="home" style="display: block;">
+                        <img src="images/freedesign/home.png" height="313" width="426" alt="">
+                    </div>
+                    <div class="shejitu" style="display: block;">
+                        <img src="images/freedesign/shejitu.png" height="329" width="255" alt="">
+                    </div>
+                    <div class="icon">
+                        <span class="icon-1" style="top: 0px;"></span>
+                        <span class="icon-2" style="top: 134px;"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <a href=" #page3" class="next next2"></a>
+        </div>
+        <!-- 第三屏 -->
+        <div id="page3" class="com_page" style="height: 693px;">
+            <div class="wrap">
+                <div class="ti">
+                    <img src="images/freedesign/p3_ti.png" height="78" width="818" alt="">
+                </div>
+                <div class="p3_img">
+                    <div class="p3_left" style="display: block;">
+                        <img src="images/freedesign/shejishi.png" height="303" width="215" alt="">
+                        <span style="top: 68px; left: 0px; display: inline;"></span>
+                        <span style="top: 118px; left: 20px; display: inline;"></span>
+                        <span style="top: 84px; left: 160px; display: inline;"></span>
+                        <span style="top: 43px; right: 0px; display: inline;"></span>
+                        <span style="top: 120px; right: 40px; display: inline;"></span>
+                        <span style="top: 140px; left: 140px; display: inline;"></span>
+                    </div>
+                    <div class="p3_right" style="opacity: 1; padding: 88px;">
+                        <img src="images/freedesign/xiaoguotu.png" height="303" width="409" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href=" #page4" class="next next3"></a>
+        </div>
+        <!-- 第四屏 -->
+        <div id="page4" class="com_page" style="height: 693px;">
+            <div class="wrap">
+                <div class="ti">
+                    <img src="images/freedesign/p4_ti.png" height="78" width="674" alt="">
+                </div>
+                <div class="p4_img">
+                    <div class="p4_1 current">体验家具实物</div>
+                    <div class="p4_2 current">看家具方案</div>
+                    <div class="p4_3 current">出报价</div>
+                    <div class="p4_4 current">签合同</div>
+                </div>
+            </div>
+            <a href=" #page5" class="next next4"></a>
+        </div>
+        <!-- 第五屏 -->
+        <div id="page5" class="com_page" style="height: 693px;">
+            <div class="wrap">
+                <div class="ti">
+                    <img src="images/freedesign/p5_ti.png" height="78" width="760" alt="">
+                </div>
+                <div class="p5_img">
+                    <div class="P5_home">
+                        <img src="images/freedesign/home.png" height="313" width="426" alt="">
+                    </div>
+                    <div class="car">
+                        <img src="images/freedesign/car.png" height="74" width="223" alt="">
+                    </div>
+                    <div class="fufnng">
+                        <img src="images/freedesign/cufang.png" height="220" width="220" alt="">
+                    </div>
+                    <div class="yun1">
+                        <img src="images/freedesign/yun1.png" height="35" width="55" alt="">
+                    </div>
+                    <div class="yun2">
+                       <img src="images/freedesign/yun2.png" height="25" width="45" alt=""> 
+                    </div>
+                    <div class="sun">
+                        <img src="images/freedesign/sun.png" height="47" width="46" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <a href=" #page6" class="next next5"></a>
+        </div>
+
+        <!-- 第六屏开始 -->
+        <div id="page6" class="com_page" style="height: 693px;">
+            <div class="wrap">
+                <div class="ti">
+                    <img src="images/freedesign/p6_ti.png" height="78" width="674" alt="">
+                </div>
+                <div class="p6_img">
+                    <div class="p6_icon1"></div>
+                    <div class="p6_icon2"></div>
+                    <div class="p6_icon3"></div>
+                    <div class="p6_icon4"></div>
+                    <div class="p6_icon5"></div>                    
+                </div>
+            </div>
+            <a href=" #page7" class="next next6"></a>
+        </div>
+        <!-- 第七屏开始 -->
+        <div id="page7" class="com_page" style="height: 693px;">
+            <div class="retruntop"></div>
+            <div class="wrap">
+                <div class="p7_ti">
+                    <img src="images/freedesign/p7_ti.png" height="49" width="696" alt="">
+                </div>
+                <div class="lc">
+                    <img src="images/freedesign/lc.png" height="148" width="623" alt="">
+                </div>
+            </div>
+            <div class="freeyuyue">
+				
+                <!-- 报名表单 -->
+                <div class="formdate">
+                <!-- 成功后弹出 -->
+                <div class="v2_baomingqus" id="form_baoming_return0" style="display: none;">
+  <div style="font-size:14px; line-height:30px; float:left; width:300px; height:200px; padding-top:30px; padding:20px 50px 20px 30px; display:block">亲爱的客户：<br>
+         <p style="text-indent:2em; font-size:14px; line-height: 30px;">您好，您已成功使用<b id="tel_b" style="font-size:15px;"></b>的手机号码预约尚品宅配上门量尺设计服务，我们的客服人员将在24小之内与您沟通详细情况，请留意接听。</p>
+   </div>
+  </div>	
+	<div id="abaoming">
+                    <form id="form2" name="form2" method="post" action="javascript:;" onsubmit="return ajax_check(form2);" autocomplete="off" enctype="multipart/form-data">
+                        <div class="name">
+                            <span>姓名:</span><input type="text" placeholder="您的姓名" name="username0" id="username0" value="">
+                        </div>
+                        <div class="tel">
+                            <span>电话:</span><input type="text" placeholder="预约号将发到您的手机" name="tel0" id="tel0" class="text_box1_input" value="">
+                        </div>
+                        <div class="ad">
+                        </div>
+                        <div id="postMsg0" style="margin:0 auto;width:300px;color:#f01c43; height:30px; text-align:center; line-height:30px;"></div>
+                        <div><input type="submit" id="submit_img0" class="btn" value="立即免费预约"></div>
+                    </form>
+    
+   </div>
+
+                </div>
+                <!-- 报名信息 -->
+                <div class="baoming_info">
+                    <div class="baoming_info_top">今天<span>2364</span>人预约成功</div>
+                    <div class="baoming_info_ti">最新预约成功客户</div>
+                    <div class="info_box">  
+	        <ul id="info" style="overflow: hidden;">
+	                <div style="margin-top: -3.275px;"><li style="overflow:hidden">&nbsp;武汉蔡女士(07月15日已申请上门量尺)</li></div>
+	                <div style="margin-top: 0px;"><li style="overflow:hidden">&nbsp;成都管女士(07月15日已申请上门量尺)</li></div>
+	                <div style="margin-top: 0px;"><li style="overflow:hidden">&nbsp;广州陈女士(07月15日已申请上门量尺)</li></div>
+	                <div style="margin-top: 0px;"><li style="overflow:hidden">&nbsp;厦门孙先生(07月15日已申请上门量尺)</li></div>
+	                <div style="margin-top: 0px;"><li style="overflow:hidden">&nbsp;南京白先生(07月15日已申请上门量尺)</li></div>
+	                <div style="margin-top: 0px;"><li style="overflow:hidden">&nbsp;武汉龚先生(07月15日已申请上门量尺)</li></div>
+	                <div style="margin-top: 0px;"><li style="overflow:hidden">&nbsp;成都李女士(07月15日已申请上门量尺)</li></div>
+	                <div style="margin-top: 0px;"><li style="overflow:hidden">&nbsp;南京易女士(07月15日已申请上门量尺)</li></div>
+	         </ul>      
+      </div>
+  </div>
+  <script type="text/javascript">
+   /*抽奖的文本滚动*/
+        $(function() {
+      
+          //cache the bobao
+          var bobao = $("#info");
+            
+          //wrap dt:dd pairs in divs
+          bobao.children().filter("li").each(function() {
+            
+            var dt = $(this),
+              container = $("<div>");
+            
+            dt.next().appendTo(container);
+            dt.prependTo(container);
+            
+            container.appendTo(bobao);
+          });
+                  
+          //hide the scrollbar
+          bobao.css("overflow", "hidden");
+          
+          //animator function
+          function animator(currentItem) {
+              
+            //work out new anim duration
+            var distance = currentItem.height();
+              duration = (distance + parseInt(currentItem.css("marginTop"))) / 0.025;
+  
+            //animate the first child of the bobao
+            currentItem.animate({ marginTop: -distance }, duration, "linear", function() {
+              
+              //move current item to the bottom
+              currentItem.appendTo(currentItem.parent()).css("marginTop", 0);
+  
+              //recurse
+              animator(currentItem.parent().children(":first"));
+            }); 
+          };
+          
+          //start the bobao
+          animator(bobao.children(":first"));
+                  
+          //set mouseenter
+          bobao.mouseenter(function() {
+            
+            //stop current animation
+            bobao.children().stop();
+            
+          });
+          
+          //set mouseleave
+          bobao.mouseleave(function() {
+                    
+            //resume animation
+            animator(bobao.children(":first"));
+            
+          });
+        });
+      </script>
+<script>
+        function isNum(str){
+             var reg = /^[0-9_-]+$/;
+             if(!reg.test(str)){
+                 return false;
+             }
+             return true;
+        }
+        function isChn(str){ 
+            var reg = /^[\u4E00-\u9FA5]+$/; 
+            if(!reg.test(str)){ 
+        
+                return false; 
+                }
+            return true; 
+        }
+        function isTel(str){
+            var reg = /^1/;
+            if(!reg.test(str) || str.length!=11){
+                return false;
+         }
+            return true;
+        }
+function ajax_check(f){       
+  document.getElementById("submit_img0").disabled=true;//锁定提交按钮    
+  //变量
+  var username = f.username0.value;  
+  var tel = f.tel0.value;
+  var province = f.province0.value;
+  var city = f.city0.value;
+  var zhuanti_pages ="liuchengye";
+
+  
+  if(username=='' || username=='您的姓名'){
+    $("#postMsg0").html("亲，姓名不能为空 ！");
+    document.getElementById("submit_img0").disabled=false;//解锁提交按钮
+  
+    return false;
+  }
+  
+  if(tel=='' || !isTel(tel) || !isNum(tel) || tel=='预约号将发到您的手机'){
+    $("#postMsg0").html("亲，手机号码填写错误 ！");
+    document.getElementById("submit_img0").disabled=false;//解锁提交按钮
+  
+    return false;
+  }
+
+
+  $("#postMsg0").empty();
+  $("#postMsg0").html("数据正在提交..."); 
+  $.post("/zhixiao/zt_baoming_ajax.php",
+      {
+       action:'OK',
+       username:username,
+       tel:tel,
+       province:province,
+       city:city,
+       sp_type:"1053",
+       zhuanti_pages:zhuanti_pages,
+       //tuangou_all_type:1
+      },
+      function(d,s){
+        if(s=="success"){
+          var rd = new Array();
+          rd = d.split("_");
+          if(rd.length<2){
+            $("#postMsg0").html("亲，你提交的数据不正确！");
+            document.getElementById("submit_img0").disabled=false;//解锁提交按钮          
+            return false;
+          }else{
+            if(rd[0]=="err"){
+              $("#postMsg0").html(rd[1]);
+              document.getElementById("submit_img0").disabled=false;//解锁提交按钮            
+              return false;
+            }           
+            if(rd[0]=="ok"){     
+				//20150922 张坤荣改  根据反馈id生成个性二维码
+			  // $(".erm img").attr('src',rd[2]);
+			  // $(".erm img").attr('data-original',rd[2]);
+              $("#abaoming").hide();
+              $("#tel_b").html(tel);
+              $("#form_baoming_return0").show();
+              $("#postMsg0").empty();
+            }
+          }
+          
+        }
+        
+      }
+    );
+  return false;
+  
+}
+</script>
+
+  </div>
+
+</div>
+
+    </div>
+
+</body>
+</html>

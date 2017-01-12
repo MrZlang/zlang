@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta charset="gb2312">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="icon" type="image/png" href="assets/i/favicon.png">
+<link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/zepto.min.js"></script>
+</head>
+<body class="bg-hui">
+<!-- 顶部 -->
+<div class="main-wrap" id="main-wrap">
+{dede:include filename="head_m.htm"/}
+        	<div class="main" id="main">
+		<div id="mainWrap">
+			<div class="new-title">
+				<span class="f16 hei_333">【活动中心】橱柜促销活动 - 怡萧行全屋定制官方网站</span>
+            		</div>
+			<div class="news-list-con">
+            	<ul class="news-list active-list">
+            		{dede:list pagesize='5'}
+					<li>
+						<a href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]">
+							<p class="img"><img src="[field:litpic function=firstimg('@me')/]"></p>
+							<p class="pr text">
+								[field:title/]
+								<!-- <span class="active_time text-overflow bg-cover-after">活动时间：<span class="red3">2016.10.29-2016.11.12</span></span> -->
+							</p>
+						</a>
+					</li>
+					{/dede:list}
+				</ul>
+				<div class="tab_foot">
+					<div class="bbs-page">
+						{dede:pagelist listitem="index,end,pre,next,option" listsize="1"/}
+					</div>
+				</div>
+            		</div>
+		</div>
+	</div>
+{dede:include filename="foot_m.htm"/}
+<!-- 弹出表单 -->
+<div class="show">
+	<h1 class="lean">即刻报名抢占一县</h1>
+	<div class="close"><img src="assets/images/close.png" title="衣柜招商代理" alt="衣柜加盟,怡萧行,橱柜代理"></div>
+	<form action="/plus/diy.php" enctype="multipart/form-data" method="post" class="form-main" name="tForm">
+		<input type="hidden" name="action" value="post" />
+		<input type="hidden" name="diyid" value="4" />
+		<input type="hidden" name="do" value="2" />
+	    	<div class="ban"  id="bmk">
+			<div class="ban_box">
+				<div class="ban_txt">
+					<input type='text' name='mobilename' id='mobilename' placeholder="请输入姓名" value='' />
+		      		</div>
+				<div class="ban_txt">
+					<input type='number' name='mobilephone' id='mobilephone' maxlength="11" value='' placeholder="请输入手机号码"/>
+				</div>            
+		            <div class="ban_btn">
+					<input type="submit" name="submit" value="立即申请加盟"  onclick="return check(tForm)"/>	
+				</div>
+		      	</div>
+		</div>
+		<input type='hidden' name='mobilearea' id='mobilearea' value='最新动态列表页加盟报名' />
+		<input type='hidden' name='mobiledate' id='mobiledate' value='' />
+		<input type="hidden" name="dede_fields" value="mobilename,text;mobilephone,text;mobilearea,text;mobiledate,text" />
+		<input type="hidden" name="dede_fieldshash" value="19c2190b40efa32b3ee18fa4b0a1cb69" />
+	</form>
+</div>
+<div class="show-mask"></div>
+<script type="text/javascript" src="assets/js/mark.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<script>
+$(document).ready(function(){
+	$(".pcleyu").click(function(){
+		$('.show').css('display','block');
+		$('.show-mask').css('display','block');
+	})
+	$('.show .close').click(function(){
+		$('.show').css('display','none');
+		$('.show-mask').css('display','none');
+	})
+})
+</script>
+<script language="javascript" src="http://dkt.zoosnet.net/JS/LsJS.aspx?siteid=DKT98506049&float=1&lng=cn"></script>
+</body>
+</html>

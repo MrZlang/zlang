@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+<meta name="screen-orientation" content="portrait">
+<meta name="format-detection" content="email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
+<link rel="stylesheet" type="text/css" href="assets/css/common.css" >
+<link rel="stylesheet" type="text/css" href="assets/css/base.css" >
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/mark.js"></script>
+</head>
+<body>
+<header class="header">
+  <a href="{dede:global.cfg_mobileurl/}/list.php?tid=2" class="fan">
+      <img src="assets/images/fan.png">
+    </a>
+  <h3>帖子详情</h3>
+  <!--<a class="header_more" href=""></a>-->
+      <a class="header_more" href="javascript:;"></a>
+      <!--<a href="tel:4008841868" class="kf_phone"></a>-->
+</header>
+{dede:include filename="nav_m.htm"/}
+<!-- 内容 -->
+<div class="bbi-box">
+	<div class="bbi-bt"><a href="#" title="衣柜定制">{dede:field.title/}</a></div>
+	<div class="bbs-ps">
+		<em>
+			<img src="assets/images/t.png" title="衣柜定制" alt="武汉衣柜定制,怡萧行,衣柜定制">
+			<p><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></p>
+			</em><em>
+			<img src="assets/images/i.png">
+			<p><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></p>
+		</em>
+	</div>
+  	<div class="bbi-lou">
+    		<div class="bbi-user">
+          		<a href="#" title="橱柜定制">
+          			<img src="{dede:global.cfg_basehost/}/images/designer/pic/{dede:field.pro_design/}" width="200" height="200" title="橱柜定制" alt="武汉橱柜定制,怡萧行,橱柜定制">
+          		</a>
+        		<i>{dede:field.writer/}</i>
+            		<div class="lv" style="background:#00CC99;">LV.5</div>
+                	<div class="bz" style="background:#336699;">作者</div>
+									<div class="bz" style="background:#ff5a00;">{dede:field.pro_style/}</div>
+        		<span>{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</span>
+        	</div>
+		<div class="bbi-biao"><i>设计师</i></div>
+  	</div>
+  	<div class="bbi-txt">
+            <strong style="color:#ff5a00;">案例介绍:</strong>
+            {dede:field.description/}
+						<img src="{dede:field.pro_cad/}" title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保定制" />
+						<div align="center">CAD图</div>
+    		<img src="{dede:field.pro_images/}"  title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保定制"/>
+        	<div align="center">户型图</div>
+            {dede:productimagelist}
+            <img  src="[field:imgsrc/]"  title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保定制"/>
+            <div align="center">案例图</div>
+            {/dede:productimagelist}
+    	</div>
+</div>
+<div class="bottom2">
+  <div class="bottom-rec">
+    <section class="bottom-rec-new">
+      <div class="new-title">最近关注</div>
+      <ul class="new-title-list">
+        {dede:arclist row='5' orderby='pubdate' titlelen=30}
+        <li>
+          <a href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]"  title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保定制">
+            <span class="f-l">[field:title/]...</span>
+            <span class="f-r">[field:pubdate function='strftime("%m-%d",@me)'/]</span>
+          </a>
+        </li>
+        {/dede:arclist}
+      </ul>
+    </section>
+    <section class="bottom-rec-new">
+      <div class="new-title">热点内容</div>
+      <ul class="new-title-list">
+        {dede:arclist row='5' orderby='hot' titlelen=35}
+        <li>
+          <a href="[field:global name=cfg_mobileurl /]/view.php?aid=[field:id/]"  title="武汉全屋定制">
+            <span class="f-l">[field:title/]...</span>
+            <span class="f-r">[field:pubdate function='strftime("%m-%d",@me)'/]</span>
+          </a>
+        </li>
+        {/dede:arclist}
+      </ul>
+    </section>
+  </div>
+</div>
+<!-- online -->
+<div class="ge"></div>
+<div class="footer_consule">
+    <div class="bg"></div>
+    <div class="cs_designer">
+            <a href="tel:4000-868-863" target="_blank">电话咨询</a>
+            <a class="alert_popup_apply pcleyu" >申请免费设计</a>
+    </div>
+</div>
+<!-- 弹出表单 -->
+<div class="show">
+  <h1 class="lean">0元设计全屋家具</h1>
+  <div class="close"><img src="assets/images/close.png"  title="衣柜定制"></div>
+  <form action="/plus/diy.php" enctype="multipart/form-data" method="post" class="form-main" name="tForm">
+    <input type="hidden" name="action" value="post" />
+    <input type="hidden" name="diyid" value="6" />
+    <input type="hidden" name="do" value="2" />
+        <div class="ban"  id="bmk">
+      <div class="ban_box">
+        <div class="ban_txt">
+          <input name="m_details_name" type="text" id="m_details_name"  placeholder="请输入姓名" value=''>
+              </div>
+        <div class="ban_txt">
+          <input maxlength="11" type="number"  name="m_details_phone" id="m_details_phone" placeholder="请输入手机号码">
+        </div>
+        <div class="ban_txt">
+		<input type='text' name='m_details_region' id='m_details_region'  placeholder="请输入小区地址" value=''/>
+	  </div>
+                <div class="ban_btn">
+          <input type="submit" name="submit" value="火热报名中"  onclick="return check(tForm)"/>
+        </div>
+            </div>
+    </div>
+    <input type='hidden' name='m_details_area' id='m_details_area' value='文章内容页底部预约报名' />
+    <input type='hidden' name='m_details_date' id='m_details_date' value='' />
+    <input type="hidden" name="dede_fields" value="m_details_name,text;m_details_phone,text;m_details_area,text;m_details_date,text;m_details_region,text" />
+    <input type="hidden" name="dede_fieldshash" value="7c55ef21705b27c07a9bcb4130ef73fb" />
+  </form>
+</div>
+<div class="show-mask"></div>
+<!-- right -->
+<div class="right">
+  <!-- <a href="/online/"  class="pcleyu"><img src="assets/images/kefu.png"></a> -->
+    <a href="#" style="display:none;"  title="环保家具定制"><img src="assets/images/top.png"  title="环保家具定制" alt="武汉环保家具定制,怡萧行,环保定制"></a>
+</div>
+<script language="javascript" src="http://dkt.zoosnet.net/JS/LsJS.aspx?siteid=DKT98506049&float=1&lng=cn"></script>
+</body>
+</html>

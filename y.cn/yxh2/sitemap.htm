@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>网站地图_怡萧行全屋定制</title>
+<link href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/comm.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jia-common.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="content">
+    <div class="c_5" style="border:1px solid #B7D5CB; margin:10px auto;width:980px;border-top:5px solid #B7D5CB;">
+    {dede:global name='maplist'/}
+    </div>
+    
+    <div class="blank2"></div>
+    <div class="map">
+		<div class="map_title"><span>网站最新文章</span></div>
+		<div class="map_txt">
+        	<div class="map_ner">
+			<ul>{dede:arclist titlelen='40' row='20' typeid='all' }
+			<li><a href="[field:arcurl/]" target="_blank" hidefocus="hidefocus" title="[field:fulltitle/]">[field:title/]</a><span>[field:pubdate function='GetDateMK(@me)'/]</span></li>
+            {/dede:arclist}
+</ul>
+</div>			 			 		 			
+		</div>
+	</div>
+	<div class="map">
+		<div class="map_title"><span>网站热点文章</span></div>
+		<div class="map_txt">
+        	<div class="map_ner">
+			<ul>{dede:arclist titlelen='40' row='20' typeid='all' }
+			<li><a href="[field:arcurl/]" target="_blank" hidefocus="hidefocus" title="[field:fulltitle/]">[field:title/]</a><span>[field:pubdate function='GetDateMK(@me)'/]</span></li>
+            {/dede:arclist}</ul>
+</div>			 			 		 		
+		</div>
+	</div>
+	   <div class="blank2"></div>
+  </div>
+  
+  
+
+
+<style>
+
+.linkbox{
+    width:989px;margin:0 auto;
+	padding:10px 8px;
+	border-bottom:1px solid #EEE;
+}
+.linkbox h3,.linkbox h3 a{
+	font-size:14px;
+	color:#693;
+}
+.f6{/* 链接横排自适应列表 */
+	width:100%;
+	overflow:hidden;
+	clear:both;
+	padding-bottom:10px;
+}
+.f6 li{
+	float:left;
+	line-height:14px;
+	padding:8px 10px 0px;
+	white-space:nowrap;
+}
+.f6 li a{
+	color:#666666;
+	float:left;
+}
+.map_top{width:980px;height:auto;margin-top:9px;}
+.map_top_logo{ float:left;width:221px;height:73px;margin-top:9px;}
+.map_top_logo a{width:221px;height:73px;display:block;}
+.map_top_ad{ float:right;}
+.map{width:980px;height:auto;border-left:1px solid #B7D5CB;border-bottom:1px solid #B7D5CB;border-right:1px solid #B7D5CB;border-top:5px solid #B7D5CB;overflow:hidden;margin:10px auto;}
+.map_title{width:946px;height:31px;float:left;margin:14px 0 0 14px;display:inline;border-bottom:1px solid #DDD;}
+.map_title span{width:100px;height:31px;float:left;line-height:30px;font-size:14px;color:#333;font-weight:bold;text-align:center;padding:0 0 0 15px;}
+.map_txt{width:946px;height:auto;float:left;margin:14px 0 0 14px;display:inline;}
+.map_ner{width:946px;height:auto;float:left;border-bottom:1px dashed #d4d4d4;padding:0 0 10px 0;margin:0 0 10px 0;}
+.map_txt ul{width:940px;height:auto;float:left;}
+.map_txt ul.none{width:430px;height:auto;float:left;margin:0 0 0 44px;border-right:none;}
+.map_txt li{margin:0 22px;width:410px;height:30px;float:left;line-height:30px;font-size:14px;padding:0 0 0 15px;overflow:hidden;}
+.map_txt li a{width:300px;float:left;overflow:hidden;}
+.map_txt li span{float:right;font-size:13px;color:#888;}
+
+
+</style>
+{dede:include filename="footer.htm"/}
+
+ </body>
+</html>

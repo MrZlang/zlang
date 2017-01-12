@@ -1,0 +1,184 @@
+<div class="header_seek_nav" style="top: -100%;">
+	<div class="header_seek_nav_input">
+   		<a href="#"></a>
+            <!-- <input type="text" name="keyword" class="text" placeholder="怡萧行橱柜">
+            <input type="submit" class="submit" value=""> -->
+            <form role="search" action="{dede:global.cfg_cmsurl/}/plus/search.php" name="aForm" >
+                <input type="text" placeholder="橱柜空间" name="q" value=""class="text">
+                <input type="submit" class="submit" value="" onclick="return mark(aForm)">
+            <!-- <button type="submit" onclick="return mark(aForm)">
+               <input  style="width: 24px;height: 24px;padding: 0 1px;"  type="image" src="{dede:global.cfg_mobileurl/}/assets/images/search.png" />
+            </button> -->
+            </form>
+	</div>
+	<div class="header_seek_nav_com">
+		<h4>热门搜索</h4>
+		<ul>
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=橱柜空间">橱柜空间</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=厨房装修">厨房装修</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=欧式厨房">欧式厨房</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=橱柜安装">橱柜安装</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=隔断设计">隔断设计</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=简约欧式">简约欧式</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=橱柜知识">橱柜知识</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=厨房预算">厨房预算</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=橱柜类型">橱柜类型</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=厨房设计">厨房设计</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=美式实木">美式实木</a></li> 
+			<li><a href="{dede:global.cfg_cmsurl/}/plus/search.php?q=效果图">效果图</a></li> 
+        	</ul>
+	</div>
+</div>
+<div class="header_more_com" style="top: -100%; display: none;">
+	<ul style="height: 627px;">
+        <li>
+            <a class="more_nav_sy" href="{dede:global.cfg_mobileurl/}/">
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a class="more_nav_bj" href="{dede:global.cfg_mobileurl/}/list.php?tid=11">
+                <span>布局</span>
+            </a>
+        </li>
+        <li>
+            <a class="more_nav_fg" href="{dede:global.cfg_mobileurl/}/list.php?tid=10">
+                <span>风格</span>
+            </a>
+        </li>
+        <li>
+            <a class="more_nav_hd" href="{dede:global.cfg_mobileurl/}/activityzone_m.html">
+                <span>活动</span>
+            </a>
+        </li>
+        <li>
+            <a class="more_nav_gl" href="{dede:global.cfg_mobileurl/}/list.php?tid=8">
+                <span>定制攻略</span>
+            </a>
+        </li>
+        <li>
+            <a class="more_nav_sj" href="{dede:global.cfg_mobileurl/}/list.php?tid=1">
+                <span>效果图</span>
+            </a>
+        </li>
+
+        <!-- <li>
+                <a class="more_nav_sjtd" href="{dede:global.cfg_mobileurl/}/list.php?tid=1">
+                    <span>设计团队</span>
+                </a>
+        </li> -->
+        <li>
+            <a class="more_nav_dzlc" href="{dede:global.cfg_mobileurl/}/process.html">
+                <span>定制流程</span>
+            </a>
+        </li>
+        <li>
+            <a class="more_nav_gywm" href="{dede:global.cfg_mobileurl/}/about.html">
+                <span>关于我们</span>
+            </a>
+        </li>
+        <li style="border-width: 0 1px 1px 0px;">
+            <a class="more_nav_ppgs" href="{dede:global.cfg_mobileurl/}/strength.html">
+                <span>品牌实力</span>
+            </a>
+        </li>
+	</ul>
+</div>
+<script type="text/javascript">
+$(function(){
+        $('.search_inp').focus(function() {
+    $('.header_seek_nav_input').find('.text').focus();
+    $(".header_seek_nav").show().animate({
+        top: '0'
+    }, 500, 'linear', function() {
+        $('body').eq(0).css({
+            height: $(window).height(),
+            overflow: 'hidden'
+        });
+        $(window).scroll(function() {
+            $(window).scrollTop(0)
+        })
+    })
+});
+$('.header_seek_nav_input a').click(function() {
+    $(".header_seek_nav").show().animate({
+        top: '-100%'
+    }, 500, 'linear', function() {
+        if ($('.header_more_com').offset().top != 40) {
+            $('body').eq(0).css({
+                height: 'auto',
+                overflow: 'auto'
+            });
+            $(window).unbind('scroll')
+        }
+    })
+});
+$(".header_more").on("click", function() {
+    if ($(".header_more_com").css('display') == 'none') {
+        $(this).addClass('on');
+        $(".header_more_com").show().animate({
+            top: '40px'
+        }, 500, 'linear', function() {
+            $(window).scroll(function() {
+                $(window).scrollTop(0)
+            })
+        });
+        $(".header_more_com ul").css({
+            height: document.documentElement.clientHeight - 40
+        });
+        $('body').eq(0).css({
+            height: $(window).height(),
+            overflow: 'hidden'
+        })
+    } else {
+        $(this).removeClass('on');
+        $(".header_more_com").show().animate({
+            top: '-100%'
+        }, 500, 'linear', function() {
+            $(this).hide();
+            $(window).unbind('scroll')
+        });
+        $('body').eq(0).css({
+            height: 'auto',
+            overflow: 'auto'
+        })
+    }
+});
+//搜索框功能完善
+function sub_mit(){
+    var reg = /彩票|足球|代理|欧洲|qq|www|新辉煌|开奖|阿彬狗|开奖|开什么|棋牌|游戏|加q|q群|香港|com|Com|net|QQ|md5|sleep|alert|\+|\*|‘|’|\/|\-|\#|\^|\!|\@|\%|\&|\~|\^|\[|\]|\.|\'|\"/;
+    var txt = $.trim($('.text').val());//获取输入搜索值并去掉首尾空格
+   if(reg.test(txt)||txt==""){
+        $('.text').val("橱柜空间");
+    }
+/*    else{
+        txt = txt.replace(/\s+/g,"_");
+        window.location.href = "http://www.yixiaohang.com.cn/product_" + txt;
+    }*/
+}
+$('.submit').click(function(){ 
+    sub_mit();
+});
+document.onkeydown = function(e){
+    var keycode=document.all?event.keyCode:e.which;
+    if(keycode == 13){
+        sub_mit();
+    }
+}
+
+if($('.header_search input').val()!=''){
+    $('.header_search a').show();
+}
+$('.header_search input').bind("paste cut keydown keyup focus blur",function(){
+    if($(this).val()!=''){
+        $('.header_search a').show();
+    }else {
+        $('.header_search a').hide();
+    }
+});
+$('.header_search a').click(function(){
+    $(this).hide();
+    $('.header_search input').val('');
+});
+});
+</script>    

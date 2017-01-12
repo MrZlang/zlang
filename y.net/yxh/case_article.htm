@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<meta name="description" content="{dede:global.cfg_description/}"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="{dede:global.cfg_templets_skin/}/style/common.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/base.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/media.css" rel="stylesheet" type="text/css">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/main.js" type="text/javascript"></script>
+</head>
+<body class="case-page">
+<div class="wrap">
+	{dede:include filename="head.htm"/}
+	<!-- 主体内容 -->
+	<div class="contain">
+		<div class="news-box cl">
+        		<div class="v-crumbs">
+        			{dede:field name='position'/} 
+        			<span>{dede:field.title/}</span>
+        		</div>
+			<h1 class="title">{dede:field.typename/}</h1>
+			<div class="news-section cl">
+				<div class="news-content">
+					<div class="news-title">
+						<h2>{dede:field.title/}</h2>
+						<p>{dede:field.pubdate function="MyDate('Y-m-d H:i:s',@me)"/}</p>
+					</div>
+					<div class="news-views">
+						{dede:field.body/}	
+						<div class="news-other">
+							<p>{dede:prenext get='pre'/}</p>						
+							<p>{dede:prenext get='next'/}</p>						
+						</div>
+					</div>
+				</div>
+				<div class="news-rel">
+					<dl class="tab">
+						<dt><a class="current" href="javascript:;">装修设计</a><a href="javascript:;">热销产品</a></dt>
+						<dd>
+						<ul>
+							{dede:arclist row='4' titlelen='30' orderby='pubdate' typeid='13'}
+							<li class="cl">
+							<a href="[field:arcurl/]">
+							<span><img src="[field:litpic/]" width="120" height="60"/></span>
+							<h2>[field:title/]...</h2>
+							<p>
+							</p>
+							</a>
+							</li>
+							{/dede:arclist}
+						</ul>
+						<div class="more">
+							<a href="{dede:global.cfg_basehost/}/design/">查看全部装修设计<b></b></a>
+						</div>
+						</dd>
+						<dd style='display:none'>
+						<ul>
+							{dede:arclist row='4' titlelen='30' orderby='pubdate' typeid='1'}
+							<li class="cl">
+							<a href="[field:arcurl/]">
+							<span><img src="[field:litpic/]" width="120" height="60"/></span>
+							<h2>[field:title/]...</h2>
+							<p>
+							</p>
+							</a>
+							</li>
+							{/dede:arclist}
+						</ul>
+						<div class="more">
+							<a href="{dede:global.cfg_basehost/}/products/">查看全部产品<b></b></a>
+						</div>
+						</dd>
+					</dl>
+					<dl class="list">
+						<dt class="cl">热门文章</dt>
+						<dd>
+						<ul class="case-hot">
+							{dede:arclist row='10' titlelen='30' orderby='pubdate' typeid='11'}
+							<li><a href="[field:arcurl/]">[field:title/]...</a></li>
+							{/dede:arclist}
+						</ul>
+						</dd>
+					</dl>
+				</div>
+				<script language=javascript>
+				var s=0;
+				if($.trim($('.news-box h1.title').html()) === '产品评测') s=1;
+				$('.news-rel .tab dt a').click(function() {
+				    if($(this).hasClass('current')) return false;
+					$(this).addClass('current').siblings().removeClass('current');
+					var index = $('.news-rel .tab a').index($(this));
+					$(this).parent().siblings('dd').eq(index).show().siblings('dd:visible').hide();
+					return false;
+				}).eq(s).click();
+				</script>				
+        		</div>
+        	</div>
+	</div>
+	{dede:include filename="foot.htm"/}
+</div>
+</body>
+</html>

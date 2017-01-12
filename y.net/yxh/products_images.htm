@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<meta name="description" content="{dede:global.cfg_description/}"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/swiper.min.css">
+<link href="{dede:global.cfg_templets_skin/}/style/common.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/base.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/media.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/swiper.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/main.js" type="text/javascript"></script>
+</head>
+<body class="product-page">
+<div class="wrap">
+	{dede:include filename="head.htm"/}
+	<!-- 主体内容 -->
+	<div class="contain">
+    		<div class="v-crumbs">
+    			{dede:field name='position'/} 
+    		</div>
+    		<div id="content">
+        		<div class="product-wp">
+            		<div class="order-detail">
+                        <div class="title">我要预约</div>
+                        <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+                        <input type="hidden" name="action" value="post" />
+                        <input type="hidden" name="diyid" value="2" />
+                        <input type="hidden" name="do" value="2" />
+                        <div class="order-input">
+                                <i class="user"></i>
+                                <input type='text' name='detailsname' id='detailsname' class='freename' value='' />
+                                <p id="productxt" style="display: none; color:#ff5a00;">请输入您的姓名</p>
+                        </div>
+                        <div class="order-input">
+                                <i class="password"></i>
+                                <input type='text' name='detailsphone' id='detailsphone' class='freetel' value='' />
+                                <p id="productxt2" style="display: none; color:#ff5a00;">请输入您的手机号</p>
+                                <p id="productxt3" style="display: none; color:#ff5a00;">请输入正确的手机号</p>
+                        </div>
+                        <input type="submit" name="submit" value="提 交" class='submit' id="details-btn" />
+                        <input type='hidden' name='detailsarea' id='detailsarea'  value='产品详情预约' />
+                        <input type='hidden' name='detailsdate' id='detailsdate'  value='' />
+                        <input type="hidden" name="dede_fields" value="detailsname,text;detailsphone,text;detailsarea,text;detailsdate,text" />
+                        <input type="hidden" name="dede_fieldshash" value="2393c9bb8ca58e9308c9469aa20eb880" />
+                        </form>
+                        <ul class="intro-list">
+                              <li>千家专卖店</li>
+                              <li>5000多名设计师</li>
+                              <li>已累计为317639位顾客</li>
+                              <li>提供设计出图和报价服务</li>
+                        </ul>
+                        <div class="user-name list">
+                            <div id="pro" >
+                                  <div id="pro1">
+                                        <ul id="express">
+                                                <li>李先生&nbsp;&nbsp;&nbsp;13951XXXX41</li>
+                                                <li>江小卫&nbsp;&nbsp;&nbsp;13569XXXX56</li>
+                                                <li>陈先生&nbsp;&nbsp;&nbsp;13410XXXX03</li>
+                                                <li>陈先生&nbsp;&nbsp;&nbsp;13410XXXX03</li>
+                                        </ul>
+                                  </div>
+                                  <div id="pro2"></div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                              //获取id=pro,id=pro1,id=pro2的元素对象，并把id=pro1的内容赋值给id=pro2
+                              var pro=document.getElementById("pro");
+                              var pro1=document.getElementById("pro1");
+                              var pro2=document.getElementById("pro2");
+                              pro2.innerHTML=pro1.innerHTML;
+                              //给pro1,pro2加相同的高度
+                              pro1.style.height=pro.offsetHeight+"px";
+                              pro2.style.height=pro.offsetHeight+"px";
+                              //定时器，每隔50毫秒调用一次scrollup()函数，来实现文字的滚动
+                              var timer=window.setInterval("scrollup()",50);
+                              //定义函数
+                              function scrollup(){
+                                //如果pro滚上去的高度大于pro的高度，重新给pro赋值从0再开始滑动
+                                if(pro.scrollTop>=pro.offsetHeight)
+                                {
+                                  pro.scrollTop=0;
+                                }else
+                                {
+                                  pro.scrollTop++;
+                                }
+                              }
+                              //鼠标放上停止滚动，鼠标离开继续滚动
+                                pro.onmouseover=function(){
+                                              //清除定时器
+                                              clearInterval(timer);
+                                              }
+                                pro.onmouseout=function(){
+                                              //添加定时器
+                                              timer=window.setInterval("scrollup()",50);
+                                              }
+                            </script>
+                        <a href="{dede:global.cfg_basehost/}/online/" target="_blank" class="order-link">预约有礼 了解详情 &gt;</a>
+                	</div>
+			<div class="img-preview">
+				<div class="big-img swiper-container">
+					<div class="swiper-wrapper">
+						{dede:productimagelist}
+                                    <div class="swiper-slide"><img  src="[field:imgsrc/]" alt="[field:text/]" title="[field:text/]" ></div>
+                                    {/dede:productimagelist}
+					</div>
+                              <!-- Add Pagination -->
+                              <div class="swiper-pagination"></div>
+                              <!-- Add Arrows -->
+                              <div class="swiper-button-next"></div>
+                              <div class="swiper-button-prev"></div>
+	                    </div>
+	                    <!-- Initialize Swiper -->
+	                    <script>
+	                    var swiper = new Swiper('.swiper-container', {
+	                        pagination: '.swiper-pagination',
+	                        nextButton: '.swiper-button-next',
+	                        prevButton: '.swiper-button-prev',
+	                        paginationClickable: true,
+	                        spaceBetween: 30,
+	                        centeredSlides: true,
+	                        autoplay: 2500,
+	                        autoplayDisableOnInteraction: false
+	                    });
+	                    </script>
+	           	</div>
+			<div class="product-info">
+				<div class="pd-title">
+					<h4>{dede:field.title/}</h4>
+					<p>和丹麦设计师一起，感受地平线的呼吸</p>
+				</div>
+				<dl class="pd-info">
+					<dt>系列：意大利列宾 • 高级定制实木橱柜</dt>
+					<dd style="width:230px;">
+					造型：普拉斯
+					</dd>
+					<dd style="width:230px;">
+					材质：美国红樱桃
+					</dd>
+					<dd style="width:230px;">
+					颜色：定制
+					</dd>
+				</dl>
+				<div class="pd-buy">
+					<a class="go-buy" href="/online/" target="_blank"><!-- <b></b> -->咨询购买&nbsp;&gt;&gt;</a>
+					<div class="btn-box">
+						<div class="order-btn complain" >立即预约</div>
+						<a class="ok-btn" href="javascript:void(0);" >收藏</a>
+					</div>
+					<div class="pd-share">
+						<label>先收藏起来，容我想想！</label>
+					</div>
+				</div>
+    			</div>
+    		</div>
+    			<div class="details-box" style="display: block;">
+	                <div class="intro-cont">
+	                    <img src="{dede:global.cfg_templets_skin/}/images/products_images_01.jpg" alt="">
+	                    <img src="{dede:global.cfg_templets_skin/}/images/products_images_02.jpg" alt="">
+	                    <img src="{dede:global.cfg_templets_skin/}/images/products_images_03.jpg" alt="">
+	                </div>
+	            </div>
+    		</div>
+	</div>
+	{dede:include filename="foot.htm"/}
+</div>
+</body>
+</html>

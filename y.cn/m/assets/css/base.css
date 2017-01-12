@@ -1,0 +1,80 @@
+@charset "gb2312";
+/* 分类 */
+.list-a{color:#ea4848;border-bottom:1px solid #ea4848;margin-bottom:-1px;}
+.mall-tab{width:100%;line-height:35px;border-bottom:1px solid #ccc;height:35px;color:#999;font-size:14px;background:#fff;border-top: 1px solid #ccc;}
+.mall-tab a{width:33.33%;float:left;text-align:center;position:relative;z-index:90; color: #333;}
+
+/* 文章 */
+.bbs-li{float:left;width:100%;}
+.bbs-li ul{width:100%;float:left;display:none;}
+.bbs-li li{float:left;width:100%;border-bottom:1px solid #ccc;background:#fff;position:relative;}
+.bbs-li li a{color: #333;}
+.bbs-bts{float:left;width:75%;margin:10px 3% 10px 12%;line-height:20px;font-size:14px;}
+.bbs-i{position:absolute;left:10px;top:10px;width:18px;height:18px;border-radius:3px;text-align:center;line-height:20px;}
+.bbs-ps{float:left;width:85%;margin:0 3% 0 12%;margin-bottom:10px;}
+.bbs-ps span{float:left;margin-right:10px;color:#09f;}
+.bbs-ps i{float:left;color:#ccc;}
+.bbs-ps em{float:right;margin-left:10px;}
+.bbs-ps img{width:14px;height:14px;margin:1px 7px 1px 1px;float:left;}
+.bbs-ps p{float:left;color:#999;}
+.i1{color:#f60;border:1px solid #f60;}
+.i2{color:#ea4848;left:90%;border:1px solid #ea4848;}
+.i3{color:#09f;border:1px solid #09f;}
+
+/* 返回顶部 */
+.go-top{display:none;width:30px;height:30px; position:fixed;right:10px;bottom:60px;background:rgba(0,0,0,.7);z-index:999;}
+.go-top img{width:100%;height:auto;}
+
+/* 翻页 */
+.bbs-page{width:100%;float:left;color:#ff5a00; display: flex;}
+.bbs-page li{flex:1;}
+.bbs-page a{float:left;width:80%;    margin: 10px 0 10px 10%;height:30px;line-height:30px;text-align:center;border-radius:4px;box-shadow:0 0 3px #aaa; co}
+.bbs-page-i{background:#ff5a00;color:#fff!important;}
+
+/* 搜索 */
+.bbs-search{width:100%;float:left;position:relative;}
+.bbs-search button{padding:5px; position:absolute;right:4%;height:30px;line-height:40px;width: 30px;top: 20px;}
+.bbs-search button img{height:100%}
+.bbs-search input{padding:0 4% 0 4%;height:30px;float:left;width:84%;border:1px solid #ccc;margin:0 4% 10px 4%;}
+
+/* 底部 */
+.one{border: 1px solid #ccc;border-left: none;border-right: none;}
+
+.bottom{width:100%;float:left;margin-top:10px;box-shadow:0 0 3px #ccc;background:#fff;}
+.bottom-top,.bottom-bot{float:left;height:40px;width:100%;}
+.bottom-bot{background:#ff5a00;color:#fff;font-size:12px;text-align:center;line-height:20px;padding:10px 0;}
+
+.keep{float:right;width:30px;height:30px;padding:10px 8px;}
+.keep img{width:100%;}
+
+.bbi-box{float:left;width:94%;padding:0 3%;background:#fff;box-shadow:0 0 3px #ccc;border-top: 1px solid #dedede;}
+.bbi-bt{width:100%;float:left;line-height:24px;margin:10px 0;font-size:16px;}
+.bbi-bt a{color: #333;}
+.bbi-lou{float:left;width:100%;border-top:1px solid #ddd;padding:10px 0;}
+.bbi-user{float:left;width:80%;height:40px;}
+.bbi-user img{height:40px;float:left;width:40px;border-radius:50%;}
+.bbi-user i{float:left;line-height:20px;margin-left:15px;font-size:14px;}
+.bbi-user span{line-height:20px;margin-left:15px;font-size:10px;color:#999;width:70%}
+.bbi-user span b{font-weight: normal;}
+.bbi-biao{float:left;width:20%;height:40px;}
+.bbi-biao i{border:1px solid #f60;border-radius:2px;line-height:20px;padding:0 10px;color:#f60;float:right;margin:9px 0;}
+.bbi-biao span{line-height:40px;float:right;text-align:right;}
+.bbi-txt{width:100%;float:left;line-height: 1.3rem; font-size: 13px;padding-bottom: 30px;}
+.bbi-txt p{width:100%;float:left;padding:5px 0;line-height:24px;}
+.bbi-txt img{max-width:100%;height:auto;width: 100% !important; height: auto !important; margin:5px 0px;}
+.bbi-txt table,.bbi-txt span{width: 100% !important;}
+
+.lv,.bz{float:left;border-radius:3px;color:#fff;padding:0 5px;line-height:16px;font-size:10px;margin:2px 0 2px 10px;}
+.bbs{width: 100%;height: 20px;}
+
+.left_tips{ width:100%;}
+.left_tips a{float: left;border: 1px solid#ff5a00;padding: 2px 5px; margin: 3px 4px; color: #333;}
+
+.bottom2{width: 100%; overflow: hidden;}
+.bottom-rec{width: 100%; overflow: hidden;}
+.bottom-rec-new{display: block;margin-top: 6px;background: #fff;padding: 10px;}
+.bottom-rec-new .new-title{color: #ff5a00; font-weight: bolder;padding-left: 5px;font-size: 16px;border-left: 2px solid #ff5a00;margin-bottom: 5px;}
+.bottom-rec-new .new-title-list{margin: 0;overflow: hidden;}
+.bottom-rec-new .new-title-list li{display: block;overflow: hidden;}
+.bottom-rec-new .new-title-list li a{padding: 5px 0px; display: block;}
+.new-title-list li a span{ display: block;padding: 5px; color: #333;}

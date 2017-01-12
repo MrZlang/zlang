@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>关于我们-怡萧行橱柜定制官网</title>
+<meta name="Keywords" content="关于我们,怡萧行橱柜,武汉橱柜定制厂家,整体衣柜橱柜-怡萧行橱柜定制官网" />
+<meta name="Description" content="武汉怡萧行全屋定制,专业定做环保健康家具,武汉家具定制热线4000-868-863,专注全屋家具定制,设计大师团队服务,提供卧房、书房、客厅、餐厅、厨房、入户鞋柜阳台柜等全套家具系列,总部在湖北武汉,专做武汉全屋定制,武汉衣柜定制,武汉橱柜定制,全房的定制家具都可在怡萧行定做." />
+<meta name="author" content="怡萧行橱柜定制官网" />
+<meta name="copyright" content="怡萧行橱柜定制官网|www.yixiaohang.com.cn|版权所有" />
+<meta name="googlebot" content="index, follow" />
+<meta name="robots" content="index, follow" />
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="icon" type="image/png" href="assets/i/favicon.png">
+<link href="assets/css/base_zone.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="assets/css/common.css">
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/index.js"></script>
+<script type="text/javascript" src="assets/js/mark.js"></script>
+</head>
+<body style="background: #f3f3f3;">
+<!--header begin-->
+<header class="header">
+  <a href="http://www.yixiaohang.com.cn/m/" class="fan">
+      <img src="assets/images/fan.png">
+    </a>
+  <h3>关于我们</h3>
+  <!--<a class="header_more" href=""></a>-->
+      <a class="header_more" href="javascript:;"></a>
+      <!--<a href="tel:4008841868" class="kf_phone"></a>-->
+</header>
+<div class="header_more_com" style="top: -100%; display: none;">
+  <ul style="height: 627px;">
+    <li>
+                <a class="more_nav_sy" href="http://www.yixiaohang.com.cn/m/">
+                    <span>首页</span>
+                </a>
+          </li>
+          <li>
+                <a class="more_nav_bj" href="http://www.yixiaohang.com.cn/m/list.php?tid=11">
+                    <span>布局</span>
+                </a>
+          </li>
+            <li>
+                    <a class="more_nav_fg" href="http://www.yixiaohang.com.cn/m/list.php?tid=10">
+                        <span>风格</span>
+                    </a>
+            </li>
+          <li>
+                <a class="more_nav_hd" href="http://www.yixiaohang.com.cn/m/activityzone_m.html">
+                    <span>活动</span>
+                </a>
+          </li>
+    <li>
+                    <a class="more_nav_gl" href="http://www.yixiaohang.com.cn/m/list.php?tid=8">
+                        <span>定制攻略</span>
+                    </a>
+            </li>
+          <li>
+                <a class="more_nav_sj" href="http://www.yixiaohang.com.cn/m/list.php?tid=1">
+                    <span>效果图</span>
+                </a>
+          </li>
+
+          <!-- <li>
+                <a class="more_nav_sjtd" href="http://www.yixiaohang.com.cn/m/list.php?tid=1">
+                    <span>设计团队</span>
+                </a>
+          </li> -->
+          <li>
+                <a class="more_nav_dzlc" href="http://www.yixiaohang.com.cn/m/process.html">
+                    <span>定制流程</span>
+                </a>
+          </li>
+          <li>
+                <a class="more_nav_gywm" href="http://www.yixiaohang.com.cn/m/about.html">
+                    <span>关于我们</span>
+                </a>
+          </li>
+          <li style="border-width: 0 1px 1px 0px;">
+                <a class="more_nav_ppgs" href="http://www.yixiaohang.com.cn/m/strength.html">
+                    <span>品牌实力</span>
+                </a>
+          </li>
+  </ul>
+</div>
+<script type="text/javascript">
+$(function(){
+        $('.search_inp').focus(function() {
+    $('.header_seek_nav_input').find('.text').focus();
+    $(".header_seek_nav").show().animate({
+        top: '0'
+    }, 500, 'linear', function() {
+        $('body').eq(0).css({
+            height: $(window).height(),
+            overflow: 'hidden'
+        });
+        $(window).scroll(function() {
+            $(window).scrollTop(0)
+        })
+    })
+});
+$('.header_seek_nav_input a').click(function() {
+    $(".header_seek_nav").show().animate({
+        top: '-100%'
+    }, 500, 'linear', function() {
+        if ($('.header_more_com').offset().top != 40) {
+            $('body').eq(0).css({
+                height: 'auto',
+                overflow: 'auto'
+            });
+            $(window).unbind('scroll')
+        }
+    })
+});
+$(".header_more").on("click", function() {
+    if ($(".header_more_com").css('display') == 'none') {
+        $(this).addClass('on');
+        $(".header_more_com").show().animate({
+            top: '40px'
+        }, 500, 'linear', function() {
+            $(window).scroll(function() {
+                $(window).scrollTop(0)
+            })
+        });
+        $(".header_more_com ul").css({
+            height: document.documentElement.clientHeight - 40
+        });
+        $('body').eq(0).css({
+            height: $(window).height(),
+            overflow: 'hidden'
+        })
+    } else {
+        $(this).removeClass('on');
+        $(".header_more_com").show().animate({
+            top: '-100%'
+        }, 500, 'linear', function() {
+            $(this).hide();
+            $(window).unbind('scroll')
+        });
+        $('body').eq(0).css({
+            height: 'auto',
+            overflow: 'auto'
+        })
+    }
+});
+});
+</script>    
+<div class="main" id="main">
+	<div class="about-nav">
+		<a href="http://www.yixiaohang.com.cn/m/about.html" class="hover">
+		关于怡萧行
+		</a>
+		<a href="http://www.yixiaohang.com.cn/m/strength.html">
+		品牌实力
+		</a>
+	</div>
+	<div class="content">
+	      <div class="banner">
+	          <img src="assets/images/about/about_banner.jpg">
+	      </div>
+	      <div class="about-text lh-15 text-left pd1em bg-white">
+	          <div class="h05em"></div>
+	          <p class="f20 red lh-15"><b>专业的橱、衣生产基地</b></p>
+	          <p class="f18 red">为怡萧行家居服务全球保驾护航</p>
+	          <div class="h05em"></div>
+	          <p>武汉汉慧宝驰家居有限公司，一直以来致力于衣柜、橱柜等集产品的生产和研发，发展至今已成为中国全屋定制行业的标志性品牌之一。 </p>
+		    <p>怡萧行全屋定制家具是集产品设计、研发、生产、销售、代理、招商加盟于一体的环保定制家具品牌。涵盖移门、衣柜、橱柜、酒柜、衣帽间、书柜，以及个性打造卧室家具、客厅家具、餐厅家具及厨房家具等产品。 </p>
+		    <p>先后通过ISO9001质量管理、ISO14001环境管理等权威认证，并荣获中国环境标志产品、湖北省著名商标，高新技术企业等多项殊荣。 </p>
+	          <div class="h05em"></div>
+	      </div>
+	      <div class="banner"><img src="assets/images/about/about_img_1.png"></div>
+	      <div class="banner"><img src="assets/images/about/about_img_2.jpg"></div>
+	      <div class="about-title hei_333 text-left f16 pd1rem pt-1em">
+	          发展历程
+	      </div>
+        	<div class="about-text lh-15  pd1em bg-white">
+         		<div class="h05em"></div>
+                	<ul class="about-list">
+                		<li><span>2016</span>开启"全屋定制"新时代，推出"四维健康家"主张。</li>
+						<li><span>2015</span>引入日本精益生产管理体系，独特"八维八路"服务系统。</li>
+                        <li><span>2014</span>重整旗鼓，怡萧行升级组织架构体系、管理系统、营销系统、财务系统，为引入风险投资及上市做准备，再度携手新浪家居并斩获瑞士绿色先锋企业奖殊荣。</li>
+                		<li><span>2013</span>披肝沥胆，年度招商恳谈会顺利召开，全国终端网络版图进一步扩大。
+傲视群雄，获得由居然之家颁发的年度优秀品牌称号，进一步肯定了怡萧行在定制家具行业的地位。</li>
+                		<li><span>2012</span>厉兵秣马。与全国大型建材连锁商场居然之家形成战略联盟，在全国招商方面展开合作，并提供条件优越的店面地址。
+推陈出新，F★★★★系列产品全线升级，是儿童房、老人房及空气不对流空间的最佳选择。</li>
+                		<li><span>2011</span>全程攻略，产品全线升级，并引入多功能房定制 ，同年7月，《F★★★★宝宝选拔大赛》顺利举办。</li>
+                		<li><span>2010</span>含英咀华，怡萧行定制家居行业首家推行比E0级更苛刻的甲醛限量标准 F★★★★标准，更好解决室内累计甲醛超标的问题。</li>
+                		<li><span>2008</span>若观火，引入“快乐家居”，为定制家居带来更多的设计内涵； 2009年，奉为圭臬，全面普及“您的构想，我来实现”量身定制家居文化。</li>
+                		<li><span>2007</span>雷厉风行，提出了“快装修文化”，在30天里定制一个家，怡萧行再次引领行业潮流。</li>
+                		<li><span>2006</span>以人为本，在定制家居行业倡导“家居人性化”理念，将智能及人体工程学理论引入定制家居设计。</li>
+                		<li><span>2005</span>标新立异，首次将“活力空间”设计理念引入定制家居设计。</li>
+                		<li><span>2004</span>高瞻远瞩，怡萧行全屋定制家居正式登陆中国市场，同年时期武汉总部生产基地房正式落成并投产。</li>
+                	</ul>
+		</div>
+		<div class="about-title hei_333 text-center f16 pd1rem pt-1em">
+		    五星家居体验
+		</div>
+		<dl class="about-five-start-list" id="about-five-start-list">
+			<dt class="dt-blue">
+			    高端时尚定制家居
+			        <span class="icon-close"></span>
+			</dt>
+                	<dd>
+				<div class="dd_con">
+					<div class="text">
+		                        时尚是一种积极乐观的生活态度，<br>
+		                        是灿烂的笑容，是和家人欢聚的幸福，<br>
+		                        是健康的生活方式。<br> 时尚，是对品质生活的追求，<br>
+		                        时尚，是永不落幕的精彩。<br>
+		                        现在打开怡萧行家居的百变空间，<br>开启你我的时尚生活。
+					</div>
+                        		<div class="img"><img src="assets/images/about/img_1.png"></div>
+                    	</div>
+                	</dd>
+                	<dt class="dt-green">
+                            环保
+                		<span class="icon-close"></span>
+              	</dt>
+			<dd>
+			    <div class="dd_con">
+			        <div class="text">
+			        欧洲E0级环保选材，<br>
+			        严格遵照国际环保标准进行生产；<br>
+			        智能厨电，严控油烟，<br>杜绝厨房作业污染，<br>
+			        确保您和家人的健康。
+			        </div>
+			        <div class="img"><img src="assets/images/about/img_2.png"></div>
+			    </div>
+			</dd>
+			<dt class="dt-yellow">
+				设计
+				<span class="icon-close"></span>
+			</dt>
+			<dd>
+			    <div class="dd_con">
+			        <div class="text">
+			        按照亚洲人的生活习惯，<br>结合人体工程学，<br>
+			        同时将洗涤区、准备区、烹饪区、<br>
+			        餐具存储区、食品存储区合理布局，<br>
+			        提高使用效率的同时，<br>
+			        降低操作难度，轻松掌控您的厨房。
+			        </div>
+			        <div class="img"><img src="assets/images/about/img_3.png"></div>
+			    </div>
+			</dd>
+			<dt class="dt-red">
+			    品质
+			    <span class="icon-close"></span>
+			</dt>
+			<dd>
+			    <div class="dd_con">
+			        <div class="text">
+			          从原材料采购，<br>
+			          到制造生产，再到质检包装，<br>
+			          我们严格把控每一个环节，<br>
+			          确保品质稳定。
+			        </div>
+			        <div class="img"><img src="assets/images/about/img_4.png"></div>
+			    </div>
+			</dd>
+			<dt class="dt-red2">
+			    服务
+			    <span class="icon-close"></span>
+			</dt>
+			<dd>
+			    <div class="dd_con">
+			        <div class="text">
+			        专业服务团队，<br>
+			        为用户提供专业化和标准化服务，<br>
+			        在线预约，<br>我们将免费上门测量设计的服务，<br>
+			        所购买的产品将享受品质保障、<br>
+			        终身维护，感谢您信赖并选择怡萧行。
+			        </div>
+			        <div class="img"><img src="assets/images/about/img_5.png"></div>
+			    </div>
+			</dd>
+              </dl>
+	</div>
+</div>
+<!-- bottom -->
+<div class="bottom">
+  	<div class="bottom-top">
+  		<a href="http://www.yixiaohang.com.cn/m/">触屏端</a>
+  		<a href="http://www.yixiaohang.com.cn/">电脑端</a>
+  	</div>
+  	<div class="bottom-bot">怡萧行全屋定制官方商城 鄂ICP备16004930号</div>
+</div>
+<!-- online -->
+<div class="ge"></div>
+<div class="footer_consule">
+   	<div class="bg"></div>
+  	<div class="cs_designer">
+            <a href="tel:4000-868-863" target="_blank">电话咨询</a>
+            <a class="alert_popup_apply pcleyu" >申请免费设计</a>
+   	</div>
+</div>
+<!-- 弹出表单 -->
+<div class="show">
+	<h1 class="lean">0元设计全屋家具</h1>
+	<div class="close"><img src="assets/images/close.png"></div>
+	<form action="http://www.yixiaohang.com.cn/plus/diy.php" enctype="multipart/form-data" method="post" class="form-main" name="tForm">
+		<input type="hidden" name="action" value="post" />
+		<input type="hidden" name="diyid" value="6" />
+		<input type="hidden" name="do" value="2" />
+	    	<div class="ban"  id="bmk">
+			<div class="ban_box">
+				<div class="ban_txt">
+					<input name="m_details_name" type="text" id="m_details_name"  placeholder="请输入姓名" value=''>
+		      		</div>
+				<div class="ban_txt">
+					<input maxlength="11" type="number"  name="m_details_phone" id="m_details_phone" placeholder="请输入手机号码">
+				</div>
+                                                    <div class="ban_txt">
+                                                        <input type='text' name='m_details_region' id='m_details_region'  placeholder="请输入小区地址" value=''/>
+                                                    </div>
+		            <div class="ban_btn">
+					<input type="submit" name="submit" value="火热报名中"  onclick="return check(tForm)"/>
+				</div>
+		      	</div>
+		</div>
+		<input type='hidden' name='m_details_area' id='m_details_area' value='活动专区预约报名' />
+		<input type='hidden' name='m_details_date' id='m_details_date' value='' />
+		<input type="hidden" name="dede_fields" value="m_details_name,text;m_details_phone,text;m_details_area,text;m_details_date,text;m_details_region,text" />
+        <input type="hidden" name="dede_fieldshash" value="c6b085a61c0add7ba48b850f80e35b4b" />
+	</form>
+</div>
+<div class="show-mask"></div>
+<!-- right -->
+<div class="right">
+ 	<!-- <a href="/online/"  class="pcleyu"><img src="assets/images/kefu.png"></a> -->
+  	<a href="#" style="display:none;"><img src="assets/images/top.png"></a>
+</div>
+<script>
+var funTransitionHeight = function(element, time,sheight) { // time, 数值，可缺省
+    if (typeof window.getComputedStyle == "undefined") return;
+
+    var height = window.getComputedStyle(element).height;
+    element.style.height = "auto";
+    var targetHeight = window.getComputedStyle(element).height;
+	if(sheight){
+		targetHeight = sheight;
+	}
+    element.style.height = height;
+    setTimeout(function() {
+        if (time) {
+			element.style.webkitTransition = "height "+ time +"ms";
+		}
+        element.style.height = targetHeight;
+		setTimeout(function(){
+
+			$(element).attr("style","height:"+targetHeight);
+		},time)
+    }, 15);
+};
+
+$("#about-five-start-list dt").click(function(){
+	$(this).toggleClass("hover");
+	var dd = $(this).next("dd");
+	var text = dd.find(".dd_con");
+	if($(this).hasClass("hover")){
+		text.css("display","block");
+		funTransitionHeight(dd[0],500);
+	}else{
+		funTransitionHeight(dd[0],500,"0px");
+		setTimeout(function(){
+		text.css("display","none");
+		},500)
+	}
+});
+
+</script>
+<script language="javascript" src="http://dkt.zoosnet.net/JS/LsJS.aspx?siteid=DKT98506049&float=1&lng=cn"></script>
+</div>
+</body>
+</html>

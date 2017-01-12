@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/">
+<meta http-equiv="mobile-agent" content="format=html5;url={dede:global.cfg_mobileurl/}/">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link  href="{dede:global.cfg_templets_skin/}/style/layout.css" rel="stylesheet">
+<link  href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet">
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="{dede:global.cfg_basehost/}/favicon.ico" mce_href="{dede:global.cfg_basehost/}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-function.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yxh-main.js"></script>
+</head>
+<body>
+<!--头部-->
+{dede:include filename="head2.htm"/} 
+<!--内容-->
+<div class="taglist">
+ <!--面包屑-start-->
+ <div class="f_breads">
+    <div class="xq_sn">当前位置：<a href="{dede:global.cfg_cmsurl/}/" title="衣柜定制">主页</a><span>&gt;</span>搜索结果</div>
+ </div>
+ <!--面包屑-end-->
+ <div class="taglist-left">
+ {dede:datalist}
+ <?php
+$fields['stime'] = GetDateTimeMk($fields['senddate']);
+$fields['arcurl'] = GetArcUrl($fields['aid'],$fields['typeid'],$fields['senddate'],$fields['title'],$fields['ismake'],$fields['arcrank'],$fields['namerule'],$fields['typedir'],$fields['money']);
+$fields['typeurl'] = GetTypeUrl($fields['typeid'],MfTypedir($fields['typedir']),$fields['isdefault'],$fields['defaultname'],
+			$fields['ispart'],$fields['namerule2'],$fields['moresite'],$fields['siteurl'],$fields['sitepath']);
+?>
+  <div class="taglist_left_1_1">
+	<a href="[field:arcurl/]" title="[field:fulltitle/]" title="衣柜定制" target="_blank"><img title="衣柜定制" src="{dede:field.litpic /}" alt='[field:title function='html2text(@me)'/]' width="220" height="150" class="taglist_left_1_1_1">
+	</a>
+	<ul>
+		<li style="padding:10px 0 10px;"><a href="{dede:field.arcurl/}" target="_blank">{dede:field.title/}</a></li>
+		<li style="padding-top:10px;">
+		<span>{dede:field.stime/}</span>
+         <a href="{dede:field.typeurl/}" target="_blank"><font class="taglist-1">{dede:field.typename/}</font></a>
+         
+		</li>
+		<li style="font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{dede:field.description1/}...</li>
+	</ul>
+  </div>
+  {/dede:datalist}
+  <div class="page_list" style="padding-top:30px;">
+   <ul>
+     {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="3"/}
+   </ul>
+  </div>
+ </div>
+ <!--<div class="taglist-right">
+   <div class="taglist-groom">
+    <div class="play_right_title">
+	  <font>推荐内容</font>
+    </div>
+    <div class="taglist_right_con">
+			<p>
+                {dede:arclist typeid ='1' titlelen=30 row='1'}
+				<a href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" width="360" height="200"><br>
+		        [field:title/]
+				</a>
+				<font>&nbsp;&nbsp; [field:description function="cn_substr (Html2text(@me),45)"/]...</font>
+                {/dede:arclist}
+			</p>
+	</div>
+   </div>
+   <div class="taglist-groom">
+    <div class="play_right_title">
+	  <font>热点内容</font>
+    </div>
+    <div class="taglist_right_con">
+			<p>
+                {dede:arclist idlist='3' titlelen=30 }
+				<a href="[field:arcurl/]" title="[field:fulltitle/]" title="衣柜定制"><img alt="衣柜定制,怡萧行,武汉家具定制" title="衣柜定制" src="[field:litpic/]" width="360" height="200"><br>
+		        [field:title/]
+				</a>
+				<font>&nbsp;&nbsp; [field:description function="cn_substr (Html2text(@me),45)"/]...</font>
+                {/dede:arclist}
+			</p>
+	</div>
+   </div>
+   <div class="taglist-groom">
+    <div class="play_right_title">
+	  <font>标签云</font>
+    </div>
+    <div class="taglist_right_1">
+			{dede:tag row='60' sort='month'}
+            <a href='[field:link/]' class='tagc[field:highlight /]' title="衣柜定制">[field:tag /]</a>
+            {/dede:tag}
+    </div>
+   </div>
+ </div>-->
+ 
+</div>
+<!--底部-->
+{dede:include filename="foot2.htm"/}
+</body></html>

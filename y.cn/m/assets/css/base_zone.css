@@ -1,0 +1,31 @@
+@charset "gb2312";/* margin and padding */
+
+.h{width:100%;height:5rem;float:left;}
+/* bottom */
+.bottom{float:left;width:100%;box-shadow: 0 0 3px #ccc;}
+.bottom-top{float:left;width:100%;height:40px;background: #666;}
+.bottom-top a{float:left;padding:0 10px;line-height:40px;}
+.bottom-top a:nth-child(3){float:right;}
+.bottom-bot{float:left;line-height:20px;padding:10px 0;width:100%;text-align:center;background:#eee;color:#625541;}
+
+.mall{width:100%;float:left;}
+.mall a{width:100%;margin-bottom:1.5rem;float:left;background:#fff;}
+.mall a img{width:100%;}
+
+.city{width:100%;position:fixed;top:0;left:0;z-index:1000;background:rgba(0,0,0,.7);display:none;}
+.city ul{margin-top:5rem;width:100%;float:left;background:#fff;padding-bottom:12px;max-height:350px;overflow-y:scroll;}
+.city li{border:1px solid #ccc;background:#f2f3f4;color:#666;padding:0 1.8rem;line-height:4rem;margin:1.2rem 0 0 1.2rem;float:left;font-size:1.2rem;border-radius:0.5rem;}
+.city_i{ background:#f60!important;border:1px solid #f60!important;color:#fff!important;}
+
+.logind{display:none;z-index:1200; width: 100%;height: 100%;position: fixed;background: rgba(0,0,0,.5);left: 0;top: 0;}
+.logind img{-webkit-animation: rotate 3s linear 0s infinite;width: 80px;height: 80px;position: absolute;top: 50%;left: 50%;margin: -40px 0 0 -40px;}
+
+.mall_bt{float:left;width:100%;}
+.mall_bt span{float:left;width:66%;padding:10px 0;margin-left:4%;}
+.mall_bt i{width:100%;float:left;line-height:20px;color:#4d4d4c;}
+.mall_bt em{width:100%;float:left;line-height:20px;color:#656564;}
+.mall_bt i{font-size:16px;font-weight:bold;}
+.mall_bt em{font-size:14px;}
+.mall_bt p{font-size:12px;width:23%;line-height:30px;border-radius:15px;float:left;margin:15px 2%; text-align:center;color:#fff;background:#f60 url(../images/jiao.png) no-repeat 90% center; background-size:12px 12px;padding-right:2%}
+
+@-webkit-keyframes rotate{0%{-webkit-transform:rotateZ(-45deg)}100%{-webkit-transform:rotateZ(315deg)}}
